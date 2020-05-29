@@ -6,11 +6,7 @@
         ["transform-object-rest-spread"],
         ["transform-react-display-name"],
         ["react-transform", {
-          "transforms": [{
-            "transform": "react-transform-hmr",
-            "imports": ["react"],
-            "locals": ["module"]
-          }, {
+          "transforms": [ {
             "transform": "react-transform-catch-errors",
             "imports": ["react", "redbox-react"]
           }]
