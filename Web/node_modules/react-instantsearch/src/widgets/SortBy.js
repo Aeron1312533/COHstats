@@ -1,0 +1,51 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _connectSortBy = require('../connectors/connectSortBy.js');
+
+var _connectSortBy2 = _interopRequireDefault(_connectSortBy);
+
+var _SortBy = require('../components/SortBy.js');
+
+var _SortBy2 = _interopRequireDefault(_SortBy);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * The SortBy component displays a list of indexes allowing a user to change the hits are sorting.
+ * @name SortBy
+ * @requirements Algolia handles sorting by creating replica indices. [Read more about sorting](https://www.algolia.com/doc/guides/relevance/sorting/) on
+ * the Algolia website.
+ * @kind widget
+ * @propType {{value: string, label: string}[]} items - The list of indexes to search in.
+ * @propType {string} defaultRefinement - The default selected index.
+ * @propType {function} [transformItems] - Function to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return.
+ * @themeKey ais-SortBy__root - the root of the component
+ * @example
+ * import React from 'react';
+ * 
+ * import { SortBy, InstantSearch } from 'react-instantsearch/dom';
+ * 
+ * export default function App() {
+ *   return (
+ *     <InstantSearch
+ *       appId="latency"
+ *       apiKey="6be0576ff61c053d5f9a3225e2a90f76"
+ *       indexName="ikea"
+ *     >
+ *       <SortBy
+ *         items={[
+ *           { value: 'ikea', label: 'Featured' },
+ *           { value: 'ikea_price_asc', label: 'Price asc.' },
+ *           { value: 'ikea_price_desc', label: 'Price desc.' },
+ *         ]}
+ *         defaultRefinement="ikea"
+ *       />
+ *     </InstantSearch>
+ *   );
+ * }
+ */
+exports.default = (0, _connectSortBy2.default)(_SortBy2.default);

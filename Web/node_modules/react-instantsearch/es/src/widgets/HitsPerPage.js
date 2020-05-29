@@ -1,0 +1,50 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _connectHitsPerPage = require('../connectors/connectHitsPerPage.js');
+
+var _connectHitsPerPage2 = _interopRequireDefault(_connectHitsPerPage);
+
+var _HitsPerPage = require('../components/HitsPerPage.js');
+
+var _HitsPerPage2 = _interopRequireDefault(_HitsPerPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * The HitsPerPage widget displays a dropdown menu to let the user change the number
+ * of displayed hits.
+ *
+ * If you only want to configure the number of hits per page without
+ * displaying a widget, you should use the `<Configure hitsPerPage={20} />` widget. See [`<Configure /> documentation`](widgets/Configure.html)
+ *
+ * @name HitsPerPage
+ * @kind widget
+ * @propType {{value: number, label: string}[]} items - List of available options.
+ * @propType {number} defaultRefinement - The number of items selected by default
+ * @propType {function} [transformItems] - Function to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return.
+ * @themeKey ais-HitsPerPage__root - the root of the component.
+ * @example
+ * import React from 'react';
+
+ * import { HitsPerPage, InstantSearch } from 'react-instantsearch/dom';
+ *
+ * export default function App() {
+ *   return (
+ *     <InstantSearch
+ *       appId="latency"
+ *       apiKey="6be0576ff61c053d5f9a3225e2a90f76"
+ *       indexName="ikea"
+ *     >
+ *       <HitsPerPage
+ *         defaultRefinement={20}
+ *         items={[{value: 20, label: 'Show 20 hits'}, {value: 50, label: 'Show 50 hits'}]}
+ *       />
+ *     </InstantSearch>
+ *   );
+ * }
+ */
+exports.default = (0, _connectHitsPerPage2.default)(_HitsPerPage2.default);

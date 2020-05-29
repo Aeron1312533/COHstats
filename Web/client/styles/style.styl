@@ -1,0 +1,247 @@
+@import '_normalize.styl'
+@import '_typography.styl'
+@import '_animations.styl'
+@import '_mine.styl'
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+body
+  background offwhite
+
+.photo-grid
+  display flex
+  flex-wrap wrap
+  max-width 1200px
+  margin 0 auto
+
+.grid-figure
+  flex-basis calc(33.333% - 4rem)
+  flex-grow 1
+  flex-shrink 0
+  margin 0 2rem 2rem 2rem
+  padding 0
+  border 1px solid lightgray
+  background white
+  box-shadow 0 0 0 5px rgba(0,0,0,0.03);
+  position relative
+
+.single-photo-left
+  margin 0
+  padding 0
+  float left
+  width 60%
+
+.single-photo-right
+  float left
+  padding-left 2%
+  width 40%
+
+.info-box
+    overflow-x hidden
+
+.single-photo
+  @extend .grid-figure
+  max-width 1000px
+  margin 0 auto
+  margin-bottom 50px
+  display flex
+  flex-wrap wrap
+  background white
+  .grid-figure
+    box-shadow none
+    margin 0 0 0 0
+    border 0
+    padding 0
+    flex 1 0 60%
+  .comments
+    flex 1 0 40%
+    max-width 40%
+  .grid-photo
+    width 100%
+    margin 0
+
+@media (max-width 600px)
+  div.single-photo-left
+  div.single-photo-right
+    width 92%
+    padding-left 4%
+    padding-right 4%
+    margin-top 20px
+  
+
+.grid-photo
+  width calc(100%)
+  margin-top 1rem
+
+.grid-photo-wrap
+  clear both
+// Comments
+.remove-comment
+  background none
+  border 0
+  line-height 1
+  opacity 0
+  &:hover
+    color red
+
+a.post-title
+  text-decoration none
+  color inherit
+
+.comment-box
+  width 100%
+  position relative
+  font-family 'Josefin Slab', serif;
+
+  .comments-section
+    max-height 500px
+    overflow-y scroll
+
+.comment
+  border-bottom 1px solid lightgrey
+  padding 0.5rem 0
+  p
+    font-size 1.2rem
+    margin 0
+  &:hover
+    .remove-comment
+      opacity 1
+ 
+.comment-form
+  margin-top 2rem
+  padding-top 1rem
+  border-top 3px solid lightgrey
+  input, textarea
+    width 100%
+    border 0
+    font-size 1.8rem
+    padding 1rem 0
+    border-bottom 1px solid lightgrey
+    outline none
+    resize vertical
+
+.comment-author
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float left
+  color cornflowerblue
+  font-size 2rem
+  line-height 2
+
+.comment-date
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float right
+  font-size 1.5rem
+  line-height 2
+  color gray
+
+.comment-comment
+  display block
+  clear both
+  font-size 2rem
+  line-height 200%
+
+.comment-submit
+  color red
+.grid-photo-wrap
+  position relative
+
+.LazyLoad
+  overflow hidden
+
+
+.photo-category
+  position relative
+  background-color #87D37C
+  min-height 60px
+  max-height 60px
+  h3
+    display inline-block
+    float left
+    margin-top 5px
+    padding-left 10px
+.likes-heart
+  background url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat
+  background-size contain
+  font-size 2rem
+  padding 1rem
+  position absolute
+  color blue
+  left 50%
+  top 50%
+  pointer-events none
+  
+
+/*  
+  Buttons  
+*/
+
+.control-buttons
+  display flex
+  justify-content space-between
+    
+button, .button
+  border 2px solid lighten(grey, 90%)
+  background none
+  flex-basis 48%
+  display inline-block
+  line-height 2
+  text-decoration none
+  padding 5px
+  text-align center
+  font-size 15px
+  color blue
+  transition all 0.2s
+  box-sizing padding-box
+  &:hover, &:focus
+    border-color blue
+    outline 0
+
+/*
+  Cowboy style speech bubble - you should probably use an SVG for this if you are doing more icons.
+*/
+.speech-bubble
+  size = 1.25rem
+  width size * 1.2
+  height size 
+  background blue
+  display inline-block
+  border-radius 50%
+  position relative
+  &:after
+    display inline-block
+    position absolute
+    content ''
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 size size 0
+    border-color: transparent blue transparent transparent
+    top 30%
+    left 0
+  
+.captcha
+  margin-bottom 1rem
+ 
+.link-default
+  text-decoration none
+  color inherit
+
+.link-default:hover
+  text-decoration none
+  color inherit
+
+.link-default:visited
+  text-decoration none
+  color inherit
+
+.link-default:active
+  text-decoration none
+  color inherit
+
+.link-default:link
+  text-decoration none
+  color inherit
+

@@ -1,0 +1,88 @@
+.bookmark
+  background-color skyblue
+  display inline-block
+  float right
+  height 60px
+  width 60px
+  -webkit-transform skewX(45deg)
+  -moz-transform skewX(45deg)
+  -ms-transform skewX(45deg)
+  -o-transform skewX(45deg)
+  transform skewX(45deg)
+  margin-right 60px
+
+.loader
+  border 16px solid #f3f3f3
+  border-radius 50%
+  border-top 10px solid #3498db
+  width 100px
+  height 100px
+  margin-left auto
+  margin-right auto
+  -webkit-animation spin 2s linear infinite
+  animation spin 2s linear infinite
+
+
+@-webkit-keyframes spin
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+
+
+@keyframes spin
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+div.subtitle
+  font-family 'Josefin Slab', serif;
+  margin-bottom 80px
+  margin-left auto
+  margin-right auto
+  text-align center
+
+div.searchForm
+  display flex
+  flex-wrap wrap
+  max-width 1200px
+  margin 0 auto
+  padding-left 2%
+  margin-bottom 30px
+  font-family 'Josefin Slab', serif;
+  font-weight bold
+
+  form
+    width 100%
+
+div.searchBoxArea
+  width 25%
+  float left
+
+  :after
+    content ""
+    display table
+    clear both
+
+  input 
+    width 100%
+    border 1px solid #edeeed
+    box-shadow 0 0 0 2px rgba(0,0,0,0.03)
+    font-size 1.8rem
+    padding 1rem 0
+    border-bottom 1px solid lightgrey
+    outline none
+    resize vertical
+    text-indent 10px
+
+div.searchBoxInfo
+  width 75%
+  float left
+  font-size 1.8rem
+  padding 1rem 0
+  resize vertical
+  text-indent 10px
+
+@media (max-width 600px)
+  div.searchBoxArea
+  div.searchBoxInfo
+    width 100%
+    margin-top 20px
+    
