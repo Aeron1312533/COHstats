@@ -1,4 +1,5 @@
 import React from "react";
+import Main from "./Main";
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,23 +10,7 @@ import {
 export default function App() {
     return (
         <Router>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/users">Users</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+            <Main />
                 <Switch>
                     <Route path="/about">
                         <About />
@@ -37,7 +22,6 @@ export default function App() {
                         <Home />
                     </Route>
                 </Switch>
-            </div>
         </Router>
     );
 }
