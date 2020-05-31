@@ -8,8 +8,9 @@ namespace App\Controller\API;
 use App\Entity\PeterTest;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
-
-class TestController
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ 
+class TestController extends Controller
 {
 
     public function test(): Response
