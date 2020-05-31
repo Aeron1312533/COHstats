@@ -10,7 +10,7 @@ class PeterTestRepository extends EntityRepository
     {
         return $this->getEntityManager()
             ->createQuery(
-                'SELECT p.value FROM App:PeterTest p ORDER BY p.name ASC'
+                'SELECT p.value FROM App:PeterTest p ORDER BY p.value ASC'
             )
             ->getResult();
     }
