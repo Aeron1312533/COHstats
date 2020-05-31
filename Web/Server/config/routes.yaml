@@ -6,3 +6,8 @@ api_test:
     path: /api/test
     controller: App\Controller\API\TestController::test
     methods: GET|HEAD
+
+api_test_show:
+    path: /api/show/{id}
+    controller: App\Controller\API\TestController::show
+    methods: GET|HEAD
