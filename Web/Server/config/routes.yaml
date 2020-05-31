@@ -11,3 +11,8 @@ api_test_show:
     path: /api/show/{id}
     controller: App\Controller\API\TestController::show
     methods: GET|HEAD
+
+api_test_showAll:
+    path: /api/showall
+    controller: App\Controller\API\TestController::showAll
+    methods: GET|HEAD

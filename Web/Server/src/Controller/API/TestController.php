@@ -48,4 +48,22 @@ class TestController extends AbstractController
         // in the template, print things with {{ product.name }}
         // return $this->render('product/show.html.twig', ['product' => $product]);
     }
+
+    public function showAll() {
+        $product = $this->getDoctrine()
+            ->getRepository(PeterTest::class)
+            ->findAllOrderedByValue();
+
+        if (!$product) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$id
+            );
+        }
+        var_dump($product);
+        return new Response('Check out this great product: ');
+
+        // or render a template
+        // in the template, print things with {{ product.name }}
+        // return $this->render('product/show.html.twig', ['product' => $product]);
+    }
 }
