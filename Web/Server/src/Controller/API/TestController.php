@@ -59,8 +59,12 @@ class TestController extends AbstractController
                 'No product found for id '.$id
             );
         }
-        var_dump($product);
-        return new Response('Check out this great product: ');
+        $resultArray = [];
+
+        foreach($product as $item) {
+            $resultArray[] = $item->getValue();
+		}
+        return new JsonResponse($resultArray);
 
         // or render a template
         // in the template, print things with {{ product.name }}
