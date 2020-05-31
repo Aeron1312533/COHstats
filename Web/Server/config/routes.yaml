@@ -3,16 +3,16 @@ index:
     controller: App\Controller\HomeController::number
 
 api_test:
-    path: /api/test
+    path: /v1/test
     controller: App\Controller\API\TestController::test
     methods: GET|HEAD
 
 api_test_show:
-    path: /api/show/{id}
+    path: /v1/show/{id}
     controller: App\Controller\API\TestController::show
     methods: GET|HEAD
 
 api_test_showAll:
-    path: /api/showall
+    path: /v1/showall
     controller: App\Controller\API\TestController::showAll
     methods: GET|HEAD
