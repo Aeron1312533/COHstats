@@ -1,5 +1,7 @@
 import React from "react";
 import Main from "./Main";
+import Fefe from "./Component/Fefe";
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,14 +12,15 @@ import {
 export default function App() {
     return (
         <Router>
-            <Main />
-                <Switch>
-                    <Route path="/about">
+            <Switch>
+                <Route path="/fefe">
+                    <Fefe />
                     </Route>
                     <Route path="/users">
                     </Route>
-                    <Route path="/">
-                    </Route>
+                <Route path="/">
+                    <Main />
+                </Route>
                 </Switch>
         </Router>
     );
