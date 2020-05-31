@@ -27,7 +27,7 @@ class PeterTest
     }
 
     // ... getter and setter methods
-    public function setValue(value) {
-        $this->value = value;
+    public function setValue($value) {
+        $this->value = $value;
 	}
 }
