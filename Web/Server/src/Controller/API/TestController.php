@@ -21,7 +21,6 @@ class TestController extends AbstractController
 
         $product = new PeterTest();
         $product->setValue('Keyboard');
-        phpinfo();
         // tell Doctrine you want to (eventually) save the Product (no queries yet)
         $entityManager->persist($product);
 
