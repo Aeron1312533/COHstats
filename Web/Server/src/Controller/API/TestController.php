@@ -61,6 +61,7 @@ class TestController extends AbstractController
         }
         $resultArray = [];
 
+        var_dump($product);
         foreach($product as $item) {
             $resultArray[] = $item->getValue();
 		}
