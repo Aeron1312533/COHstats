@@ -9,7 +9,7 @@ use App\Entity\PeterTest;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 
-class TestController extends AbstractController
+class TestController
 {
 
     public function test(): Response
