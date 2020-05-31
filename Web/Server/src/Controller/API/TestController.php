@@ -62,10 +62,9 @@ class TestController extends AbstractController
         }
         $resultArray = [];
 
-        var_dump($product);
-        /*foreach($product as $item) {
+        foreach($product as $item) {
             $resultArray[] = $item->getValue();
-		}*/
+		}
         return new JsonResponse($resultArray);
 
         // or render a template
