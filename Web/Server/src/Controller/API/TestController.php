@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller\API;
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class TestController
 {
