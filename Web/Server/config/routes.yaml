@@ -1,3 +1,8 @@
 index:
     path: /
     controller: App\Controller\HomeController::number
+
+api_test:
+    path: /api/test
+    controller: App\Controller\API\TestController::test
+    methods: GET|HEAD
