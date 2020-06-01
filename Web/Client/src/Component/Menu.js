@@ -14,6 +14,7 @@ export default class Menu extends React.Component {
         return (
             <ul>
                 <MenuButton text="Commanders" />
+                <MenuButton text="Buildings" />
                 <MenuButton text="Abilities" />
             </ul>
         )
