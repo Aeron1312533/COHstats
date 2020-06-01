@@ -1,8 +1,8 @@
-li {
+li.fraction {
     vertical-align: middle;
     display: table-cell;
 }
 
-li:hover {
-        cursor: pointer;
+li.fraction:hover {
+    cursor: pointer;
 }
