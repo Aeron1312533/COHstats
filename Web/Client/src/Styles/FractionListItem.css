@@ -10,9 +10,9 @@ li.fraction:hover {
 li.fraction img {
     width: 60%;
     height: 60%;
+    opacity: 0.3;
 }
 
 li.fraction img:hover{
-        width: 100%;
-        height: 100%;
+        opacity: 1;
 }
