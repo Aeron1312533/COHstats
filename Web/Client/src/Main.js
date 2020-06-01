@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from './Menu';
-import '../Styles/Main.css';
+import Menu from './Component/Menu';
+import './Styles/Main.css';
 
 export default class Main extends React.Component {
     constructor(props) {
