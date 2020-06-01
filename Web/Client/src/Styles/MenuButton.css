@@ -9,6 +9,10 @@ li {
     display: table-cell;
 }
 
+li:hover {
+    background-image: url(/Images/Fundamentals/MenuButtonHover.png);
+}
+
 li a {
     display: block;
     color: white;
