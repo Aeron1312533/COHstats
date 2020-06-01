@@ -1,0 +1,8 @@
+li {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+li:hover {
+        cursor: pointer;
+}

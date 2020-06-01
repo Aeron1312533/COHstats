@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './Menu';
 import '../Styles/Menu.css';
+import FractionsList from './FractionsList';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <div>
+                <FractionsList />
                 <Menu />
             </div>
         )
