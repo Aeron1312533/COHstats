@@ -16,3 +16,8 @@ div.headerLeft div.logo {
     max-height: 105px;
     overflow: hidden;
 }
+
+div.subtitle {
+    color: white;
+    background-color: black;
+}
