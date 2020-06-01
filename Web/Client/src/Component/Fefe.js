@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuButton from './MenuButton';
+import Menu from './Menu';
 
 export default class Fefe extends React.Component {
     constructor(props) {
@@ -11,7 +11,7 @@ export default class Fefe extends React.Component {
             <div>
             <   h1>Fefe rulezz!</h1>
                 <img src="/Images/Fractions/british.png" alt="logo" />
-                <MenuButton text="Commander" />
+                <Menu />
             </div>
         )
     }
