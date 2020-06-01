@@ -20,7 +20,7 @@ export default function App() {
                     <Main fraction="Wehrmacht" />
                 </Route>
                 <Route path="/Oberkommando">
-                    <Main fraction="Oberkomanndo" />
+                    <Main fraction="Oberkommando" />
                 </Route>
                 <Route path="/Soviet">
                     <Main fraction="Soviet" />
