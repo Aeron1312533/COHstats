@@ -17,7 +17,7 @@ export default class FractionListItem extends React.Component {
         let imgClass = (this.state.isActive == true) ? "active" : "";
 
         return (
-            <li className="fraction" key={this.state.type} >
+            <li className="fraction">
                 <a href={href} ><img className={imgClass} src={source} alt={this.state.text} /></a>
             </li>
         )

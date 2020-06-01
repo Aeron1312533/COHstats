@@ -15,7 +15,7 @@ export default class FractionsList extends React.Component {
         return this.state.fractions.map(element => {
             let isActive = (element == this.state.active) ? true : false;
             return (
-                <FractionListItem type={element} text="random" isActive={isActive} />
+                <FractionListItem type={element} text="random" isActive={isActive} key={element} />
             );
         });
     };
