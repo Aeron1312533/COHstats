@@ -1,3 +1,7 @@
 ul {
     display: table;
 }
+
+div.menu {
+    clear: both;
+}

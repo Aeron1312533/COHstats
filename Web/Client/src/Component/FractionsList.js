@@ -9,13 +9,15 @@ export default class FractionsList extends React.Component {
 
     render() {
         return (
-            <ul>
-                <FractionListItem type="Wehrmacht" text="random" />
-                <FractionListItem type="Oberkommando" text="random" />
-                <FractionListItem type="Soviet" text="random" />
-                <FractionListItem type="Us" text="random" />
-                <FractionListItem type="British" text="random" />
-            </ul>
+            <div className="fractions">
+                <ul>
+                    <FractionListItem type="Wehrmacht" text="random" />
+                    <FractionListItem type="Oberkommando" text="random" />
+                    <FractionListItem type="Soviet" text="random" />
+                    <FractionListItem type="Us" text="random" />
+                    <FractionListItem type="British" text="random" />
+                </ul>
+            </div>
         )
     }
 }

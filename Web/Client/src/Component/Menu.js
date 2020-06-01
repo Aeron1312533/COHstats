@@ -12,11 +12,13 @@ export default class Menu extends React.Component {
 
     render() {
         return (
-            <ul>
-                <MenuButton text="Commanders" />
-                <MenuButton text="Buildings" />
-                <MenuButton text="Abilities" />
-            </ul>
+            <div className="menu">
+                <ul>
+                    <MenuButton text="Commanders" />
+                    <MenuButton text="Buildings" />
+                    <MenuButton text="Abilities" />
+                </ul>
+            </div>
         )
     }
 }
