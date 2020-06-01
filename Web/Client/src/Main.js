@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './Component/Menu';
+import Header from './Component/Header';
 import './Styles/Main.css';
 
 export default class Main extends React.Component {
@@ -39,7 +39,7 @@ export default class Main extends React.Component {
         console.log(items);
         return (
             <div>
-                <Menu />
+                <Header />
             </div>
         )
     }
