@@ -3,5 +3,5 @@ ul {
 }
 
 div.fractions {
-    float: right;
+    clear: both;
 }

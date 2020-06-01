@@ -14,8 +14,10 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <FractionsList fractions={['Soviet', 'Us', 'British']} />
-                <FractionsList fractions={['Wehrmacht', 'Oberkommando']} />
+                <div className = "headerRight">
+                    <FractionsList fractions={['Soviet', 'Us', 'British']} />
+                    <FractionsList fractions={['Wehrmacht', 'Oberkommando']} />
+                </div>
                 <Menu />
             </div>
         )

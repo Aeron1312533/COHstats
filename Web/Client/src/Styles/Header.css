@@ -3,3 +3,7 @@ div.header {
     height: 300px;
     position: relative;
 }
+
+div.headerRight {
+    float:right;
+}
