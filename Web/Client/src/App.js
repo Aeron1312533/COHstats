@@ -15,11 +15,24 @@ export default function App() {
             <Switch>
                 <Route path="/fefe">
                     <Fefe />
-                    </Route>
-                    <Route path="/users">
-                    </Route>
+                </Route>
+                <Route path="/Wehrmacht">
+                    <Main fraction="Wehrmacht" />
+                </Route>
+                <Route path="/Oberkommando">
+                    <Main fraction="Oberkomanndo" />
+                </Route>
+                <Route path="/Soviet">
+                    <Main fraction="Soviet" />
+                </Route>
+                <Route path="/Us">
+                    <Main fraction="Us" />
+                </Route>
+                <Route path="/British">
+                    <Main fraction="British" />
+                </Route>
                 <Route path="/">
-                    <Main />
+                    <Main fraction="Wehrmacht"/>
                 </Route>
                 </Switch>
         </Router>

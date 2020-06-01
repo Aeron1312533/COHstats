@@ -8,7 +8,8 @@ export default class Main extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            items: [],
+            fraction: props.fraction
         };
     }
 
@@ -39,7 +40,7 @@ export default class Main extends React.Component {
         console.log(items);
         return (
             <div>
-                <Header />
+                <Header fraction={this.state.fraction} />
             </div>
         )
     }

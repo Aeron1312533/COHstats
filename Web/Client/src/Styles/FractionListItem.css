@@ -14,6 +14,6 @@ li.fraction img {
         margin-right: 10px;
 }
 
-li.fraction img:hover{
+li.fraction img:hover, li.fraction img.active {
         opacity: 1;
 }

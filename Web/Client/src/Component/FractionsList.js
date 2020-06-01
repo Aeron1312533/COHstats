@@ -6,14 +6,16 @@ export default class FractionsList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            fractions: props.fractions
+            fractions: props.fractions,
+            active: props.active
         };
     }
 
     list = () => {
         return this.state.fractions.map(element => {
+            let isActive = (element == this.state.active) ? true : false;
             return (
-                <FractionListItem type={element} text="random" />
+                <FractionListItem type={element} text="random" active={isActive}/>
             );
         });
     };

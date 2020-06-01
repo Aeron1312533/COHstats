@@ -6,6 +6,9 @@ import FractionsList from './FractionsList';
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            fraction: props.fraction
+        };
     }
 
     componentDidMount() {
@@ -14,8 +17,8 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <div className = "headerRight">
-                    <FractionsList fractions={['Wehrmacht', 'Oberkommando','Soviet', 'Us', 'British']} />
+                <div className="headerRight">
+                    <FractionsList fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.state.fraction} />
                 </div>
                 <Menu />
             </div>
