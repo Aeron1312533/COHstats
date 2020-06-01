@@ -11,7 +11,7 @@ export default class FractionListItem extends React.Component {
     }
 
     render() {
-        let source = "/Images/Fractions/" + type: props.type + ".png";
+        let source = "/Images/Fractions/" + this.state.type + ".png";
         return (
             <li className = "fraction">
                 <img src={source} alt={this.state.text} />
