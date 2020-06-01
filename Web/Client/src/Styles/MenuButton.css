@@ -8,3 +8,10 @@ li {
     vertical-align: middle;
     display: table-cell;
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}

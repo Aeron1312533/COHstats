@@ -15,7 +15,7 @@ export default class MenuButton extends React.Component {
     render() {
         return (
             <li>
-                {this.state.text}
+                <a>{this.state.text}</a>
             </li>
         )
     }
