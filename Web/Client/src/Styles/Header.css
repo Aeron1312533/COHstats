@@ -13,6 +13,6 @@ div.headerLeft {
 }
 div.headerLeft div.logo {
     clear: both;
-    max-height: 110px;
+    max-height: 105px;
     overflow: hidden;
 }
