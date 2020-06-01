@@ -5,17 +5,23 @@ import '../Styles/FractionsList.css';
 export default class FractionsList extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            fractions: props.fractions
+        };
     }
 
+    list = () => {
+        return this.state.fractions.map(element => {
+            return (
+                <FractionListItem type={element} text="random" />
+            );
+        });
+    };
     render() {
         return (
             <div className="fractions">
                 <ul>
-                    <FractionListItem type="Wehrmacht" text="random" />
-                    <FractionListItem type="Oberkommando" text="random" />
-                    <FractionListItem type="Soviet" text="random" />
-                    <FractionListItem type="Us" text="random" />
-                    <FractionListItem type="British" text="random" />
+                    {this.list()}
                 </ul>
             </div>
         )
