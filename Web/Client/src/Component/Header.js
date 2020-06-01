@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import '../Styles/Menu.css';
+import '../Styles/Header.css';
 import FractionsList from './FractionsList';
 
 export default class Header extends React.Component {
@@ -13,7 +13,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="header">
                 <FractionsList />
                 <Menu />
             </div>
