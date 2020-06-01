@@ -1,3 +1,9 @@
 li {
     background-image: url(/Images/Fundamentals/MenuButton.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 250px 120px;
+    width: 250px;
+    height: 120px;
+    color: white;
 }
