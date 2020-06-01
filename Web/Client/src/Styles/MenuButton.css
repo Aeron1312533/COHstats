@@ -11,6 +11,7 @@ li {
 
 li:hover {
     background-image: url(/Images/Fundamentals/MenuButtonHover.png);
+    cursor: pointer;
 }
 
 li a {
