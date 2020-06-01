@@ -9,7 +9,7 @@ export default class Fefe extends React.Component {
         return (
             <div>
             <   h1>Fefe rulezz!</h1>
-                <img src="/Fractions/british.png" alt="logo" />
+                <img src="/Images/Fractions/british.png" alt="logo" />
             </div>
         )
     }
