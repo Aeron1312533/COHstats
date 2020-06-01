@@ -7,3 +7,9 @@ div.header {
 div.headerRight {
     float:right;
 }
+
+div.headerLeft {
+    float:left;
+    max-height: 30px;
+    overflow: hidden;
+}
