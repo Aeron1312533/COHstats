@@ -13,7 +13,7 @@ export default class FractionListItem extends React.Component {
     render() {
         return (
             <li>
-                <img src="/Images/Fundamentals/Wehrmacht.png" alt={this.state.text} />
+                <img src="/Images/Fractions/Wehrmacht.png" alt={this.state.text} />
             </li>
         )
     }
