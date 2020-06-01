@@ -9,7 +9,10 @@ div.headerRight {
 }
 
 div.headerLeft {
-    float:left;
-    max-height: 30px;
+    float: left;
+}
+div.headerLeft div.logo {
+    clear: both;
+    max-height: 150px;
     overflow: hidden;
 }
