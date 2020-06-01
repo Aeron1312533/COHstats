@@ -13,7 +13,7 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div className="menu">
-                <ul>
+                <ul className="menu">
                     <MenuButton text="Commanders" />
                     <MenuButton text="Buildings" />
                     <MenuButton text="Abilities" />

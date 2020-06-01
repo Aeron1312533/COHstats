@@ -1,5 +1,6 @@
-ul {
+ul.menu {
     display: table;
+    margin: 0;
 }
 
 div.menu {
