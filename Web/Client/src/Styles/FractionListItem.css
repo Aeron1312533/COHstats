@@ -11,6 +11,7 @@ li.fraction img {
         width: 115px;
         height: 115px;
         opacity: 0.3;
+        margin-right: 10px;
 }
 
 li.fraction img:hover{
