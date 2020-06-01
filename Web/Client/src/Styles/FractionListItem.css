@@ -7,11 +7,12 @@ li.fraction:hover {
     cursor: pointer;
 }
 
-li.fraction img {
-    width: 60%;
-    height: 60%;
-    opacity: 0.3;
-}
+    li.fraction img {
+        width: 115px;
+        height: 115px;
+        opacity: 0.3;
+        text-align: center;
+    }
 
 li.fraction img:hover{
         opacity: 1;
