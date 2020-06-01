@@ -19,5 +19,6 @@ div.headerLeft div.logo {
 
 div.subtitle {
     color: white;
+    background-color: black;
     text-align: center;
 }
