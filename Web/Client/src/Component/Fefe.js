@@ -8,6 +8,7 @@ export default class Fefe extends React.Component {
     render() {
         return (
             <h1>Fefe rulezz!</h1>
+            <img src="/Fractions/british.png" alt="logo" />
         )
     }
 }
