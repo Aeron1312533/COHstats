@@ -21,6 +21,9 @@ export default class Header extends React.Component {
                     <div className="logo">
                         <img src="/Images/Fundamentals/logo.png" />
                     </div>
+                    <div className="subtitle">
+                        UNOFFICIAL DATABASE MADE BY FANS
+                    </div>
                 </div>
                 <div className="headerRight">
                     <FractionsList fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.state.fraction} />
