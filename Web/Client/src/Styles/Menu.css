@@ -4,4 +4,6 @@ ul {
 
 div.menu {
     clear: both;
+    position: absolute;
+    bottom: 0px;
 }
