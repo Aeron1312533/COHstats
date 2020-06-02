@@ -1,5 +1,6 @@
 div.body {
-    background: url("/Images/Fundamentals/wall1.jpg");;
+    background: url("/Images/Fundamentals/wall1.jpg");
+    opacity: 0.4;
     position: relative;
     padding-top: 20px;
     height: 500px;
