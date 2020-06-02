@@ -20,7 +20,10 @@ li.commanderListItem {
         text-decoration: none;
     }
 
-li.commanderListItem img.commanderIcon {
-    height: 84px;
-    width: 86px;
-}
+    li.commanderListItem img.commanderIcon {
+        height: 84px;
+        width: 86px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
