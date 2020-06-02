@@ -1,3 +1,8 @@
 div.commanderAbilities {
-    clear: both;
+    float: right;
 }
+
+    div.commanderAbilities ul {
+        list-style-type:none;
+        padding: 0;
+    }

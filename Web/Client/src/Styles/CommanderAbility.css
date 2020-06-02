@@ -8,4 +8,5 @@ li.commanderAbility {
     margin-bottom: 20px;
     border: 1px solid grey;
     background: black;
+    float:left;
 }
