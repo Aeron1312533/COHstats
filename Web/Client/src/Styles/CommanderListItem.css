@@ -17,6 +17,10 @@ li.commanderListItem {
     li.commanderListItem a {
         display: block;
         color: white;
-        text-align: center;
         text-decoration: none;
     }
+
+li.commanderListItem img.commanderIcon {
+    height: 100px;
+    width: 105px;
+}
