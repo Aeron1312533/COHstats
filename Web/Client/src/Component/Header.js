@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
+import Menu from './UpdateInfo';
 import '../Styles/Header.css';
 import FractionsList from './FractionsList';
 
@@ -29,6 +30,7 @@ export default class Header extends React.Component {
                     <FractionsList fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.state.fraction} />
                 </div>
                 <Menu />
+                <UpdateInfo />
             </div>
         )
     }
