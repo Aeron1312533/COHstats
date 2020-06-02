@@ -16,7 +16,7 @@ export default class CommanderAbility extends React.Component {
 
         return (
             <li className="commanderAbility">
-                <img src={source} alt="text" />
+                <a><img src={source} alt="text" /></a>
             </li>
         )
     }

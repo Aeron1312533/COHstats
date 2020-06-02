@@ -10,3 +10,7 @@ li.commanderAbility {
     background: black;
     float:left;
 }
+
+li.commanderAbility:hover {
+    background: red;
+}
