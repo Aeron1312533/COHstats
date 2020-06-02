@@ -1,0 +1,22 @@
+li.commanderListItem {
+    background-image: url(/Images/Fundamentals/MenuButton.png);
+    background-repeat: no-repeat;
+    background-size: 150px 60px;
+    width: 150px;
+    height: 60px;
+    color: white;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+    li.commanderListItem:hover {
+        background-image: url(/Images/Fundamentals/MenuButtonHover.png);
+        cursor: pointer;
+    }
+
+    li.commanderListItem a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
