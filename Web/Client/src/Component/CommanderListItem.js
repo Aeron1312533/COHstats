@@ -13,12 +13,18 @@ export default class CommanderListItem extends React.Component {
 
     render() {
         let source = "/Images/Commanders/" + this.state.type + ".png";
+        let sourceAbility = "/Images/Commanders/Abilities/1.png";
         //let href = "/" + this.state.type;
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 
         return (
             <li className="commanderListItem">
                 <img className="commanderIcon" src={source} alt={this.state.text} />
+                <img className="commanderAbility" src={sourceAbility} alt={this.state.text} />
+                <img className="commanderAbility" src={sourceAbility} alt={this.state.text} />
+                <img className="commanderAbility" src={sourceAbility} alt={this.state.text} />
+                <img className="commanderAbility" src={sourceAbility} alt={this.state.text} />
+                <img className="commanderAbility" src={sourceAbility} alt={this.state.text} />
             </li>
         )
     }

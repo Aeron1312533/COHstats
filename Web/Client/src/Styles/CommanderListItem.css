@@ -26,3 +26,7 @@ li.commanderListItem img.commanderIcon {
     height: 84px;
     width: 86px;
 }
+    li.commanderListItem img.commanderAbility {
+        height: 64px;
+        width: 64px;
+    }
