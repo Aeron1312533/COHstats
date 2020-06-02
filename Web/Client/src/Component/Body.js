@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Header.css';
+import '../Styles/Body.css';
 
 export default class Body extends React.Component {
     constructor(props) {
