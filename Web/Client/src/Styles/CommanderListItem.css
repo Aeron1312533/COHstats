@@ -6,6 +6,7 @@ li.commanderListItem {
     height: 120px;
     color: white;
     clear: both;
+    list-style-type: none;
 }
 
     li.commanderListItem:hover {
@@ -20,6 +21,6 @@ li.commanderListItem {
     }
 
 li.commanderListItem img.commanderIcon {
-    height: 100px;
-    width: 105px;
+    height: 80px;
+    width: 82px;
 }
