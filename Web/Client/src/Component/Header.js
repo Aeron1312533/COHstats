@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import Menu from './UpdateInfo';
+import UpdateInfo from './UpdateInfo';
 import '../Styles/Header.css';
 import FractionsList from './FractionsList';
 
