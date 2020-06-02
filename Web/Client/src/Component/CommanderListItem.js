@@ -12,7 +12,7 @@ export default class CommanderListItem extends React.Component {
     }
 
     render() {
-        let source = "/Images/Commander/" + this.state.type + ".png";
+        let source = "/Images/Commanders/" + this.state.type + ".png";
         //let href = "/" + this.state.type;
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 

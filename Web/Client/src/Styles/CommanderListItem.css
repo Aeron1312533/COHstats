@@ -1,9 +1,9 @@
 li.commanderListItem {
     background-image: url(/Images/Fundamentals/ListItem.png);
     background-repeat: no-repeat;
-    background-size: 150px 60px;
-    width: 150px;
-    height: 60px;
+    background-size: 400px 120px;
+    width: 400px;
+    height: 120px;
     color: white;
     vertical-align: middle;
     display: table-cell;
