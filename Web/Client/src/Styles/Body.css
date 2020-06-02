@@ -1,0 +1,7 @@
+div.body {
+    background: black;
+    position: relative;
+    padding-top: 20px;
+    height: 500px;
+    width: 100%;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Component/Header';
+import Body from './Component/Body';
 import './Styles/Main.css';
 
 export default class Main extends React.Component {
@@ -41,6 +42,7 @@ export default class Main extends React.Component {
         return (
             <div>
                 <Header fraction={this.state.fraction} />
+                <Body fraction={this.state.fraction} />
             </div>
         )
     }
