@@ -7,7 +7,7 @@ li.commanderListItem {
     color: white;
     clear: both;
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 20px;
 }
 
@@ -23,6 +23,6 @@ li.commanderListItem {
     }
 
 li.commanderListItem img.commanderIcon {
-    height: 80px;
-    width: 82px;
+    height: 90px;
+    width: 92px;
 }
