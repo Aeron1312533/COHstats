@@ -21,9 +21,9 @@ li.commanderListItem {
     }
 
     li.commanderListItem img.commanderIcon {
-        height: 84px;
-        width: 86px;
+        height: 92px;
+        width: 95px;
         float: left;
-        margin-top: 20px;
-        margin-left: 15px;
+        margin-top: 15px;
+        margin-left: 10px;
     }
