@@ -5,8 +5,7 @@ li.commanderListItem {
     width: 400px;
     height: 120px;
     color: white;
-    vertical-align: middle;
-    display: table-cell;
+    clear: both;
 }
 
     li.commanderListItem:hover {
