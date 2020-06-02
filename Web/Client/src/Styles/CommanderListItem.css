@@ -29,5 +29,6 @@ li.commanderListItem img.commanderIcon {
     li.commanderListItem img.commanderAbility {
         height: 50px;
         width: 50px;
-        border: 2px solid grey;
+        border: 1px solid grey;
+        margin-left: 2px;
     }
