@@ -15,7 +15,7 @@ export default class CommandersList extends React.Component {
         return this.state.commanders.map(element => {
             let isActive = (element == this.state.active) ? true : false;
             return (
-                <CommanderListItem type={element} text="random" isActive={isActive} key={element} />
+                <CommanderListItem type={element} text="Mechanized Assault Doctrine" isActive={isActive} key={element} />
             );
         });
     };

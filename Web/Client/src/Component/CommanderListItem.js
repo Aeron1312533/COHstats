@@ -19,6 +19,7 @@ export default class CommanderListItem extends React.Component {
 
         return (
             <li className="commanderListItem">
+                <div className="commanderName">{this.state.text}</div>
                 <img className="commanderIcon" src={source} alt={this.state.text} />
                 <CommanderAbilities abilities={[1, 2, 3, 4, 5]} />
             </li>
