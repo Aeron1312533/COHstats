@@ -9,6 +9,7 @@ li.commanderAbility {
     border: 1px solid grey;
     background: black;
     float:left;
+    position: relative;
 }
 
 li.commanderAbility:hover {
@@ -19,5 +20,7 @@ div.abilityPoints {
     color: darkgoldenrod;
     font-weight: bold;
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
+    left: 20px;
+    -webkit-text-stroke: 1px red;
 }
