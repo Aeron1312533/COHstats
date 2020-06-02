@@ -1,5 +1,6 @@
 div.updateInfo {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
+    color: white;
 }
