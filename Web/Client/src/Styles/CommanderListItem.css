@@ -1,5 +1,5 @@
 li.commanderListItem {
-    background-image: url(/Images/Fundamentals/MenuButton.png);
+    background-image: url(/Images/Fundamentals/ListItem.png);
     background-repeat: no-repeat;
     background-size: 150px 60px;
     width: 150px;
@@ -10,7 +10,7 @@ li.commanderListItem {
 }
 
     li.commanderListItem:hover {
-        background-image: url(/Images/Fundamentals/MenuButtonHover.png);
+        background-image: url(/Images/Fundamentals/ListItemHover.png);
         cursor: pointer;
     }
 
