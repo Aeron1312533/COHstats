@@ -17,4 +17,7 @@ li.commanderAbility:hover {
 
 div.abilityPoints {
     color: darkgoldenrod;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10px;
 }
