@@ -13,7 +13,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <div className="body">
-                <CommandersList commanders={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active=false />
+                <CommandersList commanders={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active='false' />
             </div>
         )
     }
