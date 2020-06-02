@@ -14,7 +14,7 @@ export default class CommandersAbilities extends React.Component {
         return this.state.abilities.map(element => {
             let isActive = (element == this.state.active) ? true : false;
             return (
-                <CommanderAbility type={element} text="random" isActive={isActive} key={element} />
+                <CommanderAbility type={element} text="random" isActive={isActive} key={element} points="3" />
             );
         });
     };

@@ -14,3 +14,7 @@ li.commanderAbility {
 li.commanderAbility:hover {
     border-color: darkgoldenrod;
 }
+
+div.abilityPoints {
+    color: darkgoldenrod;
+}

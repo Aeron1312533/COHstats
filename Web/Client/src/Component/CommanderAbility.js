@@ -5,7 +5,8 @@ export default class CommanderAbility extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            type: props.type
+            type: props.type,
+            points: props.points
         };
     }
 
@@ -17,6 +18,7 @@ export default class CommanderAbility extends React.Component {
         return (
             <li className="commanderAbility">
                 <a><img src={source} alt="text" /></a>
+                <div className="abilityPoints">{this.state.points}</div>
             </li>
         )
     }
