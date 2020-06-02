@@ -27,3 +27,8 @@ li.commanderListItem {
         margin-top: 15px;
         margin-left: 10px;
     }
+
+li.commanderListItem div.commanderName {
+    float: right;
+    margin-top: 15px;
+}
