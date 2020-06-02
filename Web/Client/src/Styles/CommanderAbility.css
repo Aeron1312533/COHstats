@@ -1,7 +1,11 @@
-img.commanderAbility {
+li.commanderAbility img {
     height: 50px;
     width: 50px;
-    border: 1px solid grey;
+}
+
+li.commanderAbility {
     margin-left: 2px;
     margin-bottom: 20px;
+    border: 1px solid grey;
+    background: black;
 }

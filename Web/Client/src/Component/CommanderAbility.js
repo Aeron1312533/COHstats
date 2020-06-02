@@ -15,7 +15,9 @@ export default class CommanderAbility extends React.Component {
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 
         return (
-            <img className="commanderAbility" src={source} alt="text" />
+            <li className="commanderAbility">
+                <img src={source} alt="text" />
+            </li>
         )
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/CommanderListItem.css';
-import CommanderAbility from './CommanderAbility';
+import CommanderAbilities from './CommanderAbilities';
 
 export default class CommanderListItem extends React.Component {
     constructor(props) {
@@ -20,11 +20,7 @@ export default class CommanderListItem extends React.Component {
         return (
             <li className="commanderListItem">
                 <img className="commanderIcon" src={source} alt={this.state.text} />
-                <CommanderAbility type="1" />
-                <CommanderAbility type="2" />
-                <CommanderAbility type="3" />
-                <CommanderAbility type="4" />
-                <CommanderAbility type="5" />
+                <CommanderAbilities abilities={[1, 2, 3, 4, 5]} />
             </li>
         )
     }
