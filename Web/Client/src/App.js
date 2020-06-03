@@ -13,6 +13,9 @@ export default function App() {
     return (
         <Router>
             <Switch>
+                <Route path="/">
+                    <Main fraction="Wehrmacht" />
+                </Route>
                 <Route path="/fefe">
                     <Fefe />
                 </Route>
@@ -30,9 +33,6 @@ export default function App() {
                 </Route>
                 <Route path="/British">
                     <Main fraction="British" />
-                </Route>
-                <Route path="/">
-                    <Main fraction="Wehrmacht"/>
                 </Route>
                 </Switch>
         </Router>
