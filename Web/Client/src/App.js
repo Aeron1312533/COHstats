@@ -18,7 +18,7 @@ export default function App() {
                 </Route>
                 <Route
                     path="/Wehrmacht/Commanders/:idCommander/Abilities/:idAbility"
-                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
+                    render={(props) => <Menu {...props} />}>
                 </Route>
                 <Route
                     path="/Wehrmacht/Commanders/:id"
