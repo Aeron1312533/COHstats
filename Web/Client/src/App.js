@@ -16,7 +16,34 @@ export default function App() {
                 <Route path="/fefe">
                     <Fefe />
                 </Route>
-
+                <Route
+                    path="/Wehrmacht/Commanders/:id"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
+                </Route>
+                <Route
+                    path="/Wehrmacht"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
+                </Route>
+                <Route
+                    path="/Oberkommando"
+                    render={(props) => <Main fraction="Oberkommando" {...props} />}>
+                </Route>
+                <Route
+                    path="/Soviet"
+                    render={(props) => <Main fraction="Soviet" {...props} />}>
+                </Route>
+                <Route
+                    path="/Us"
+                    render={(props) => <Main fraction="Us" {...props} />}>
+                </Route>
+                <Route
+                    path="/British"
+                    render={(props) => <Main fraction="British" {...props} />}>>
+                </Route>
+                <Route
+                    path="/"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
+                </Route>
                 </Switch>
         </Router>
     );
