@@ -16,27 +16,33 @@ export default function App() {
                 <Route path="/fefe">
                     <Fefe />
                 </Route>
-                <Route path="/Wehrmacht/Commanders/">
-                    <Main fraction="Wehrmacht" />
+                <Route
+                    path="/Wehrmacht/Commanders"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
                 </Route>
                 <Route
                     path="/Wehrmacht"
                     render={(props) => <Main fraction="Wehrmacht" {...props} />}>
                 </Route>
-                <Route path="/Oberkommando">
-                    <Main fraction="Oberkommando" />
+                <Route
+                    path="/Oberkommando"
+                    render={(props) => <Main fraction="Oberkommando" {...props} />}>
                 </Route>
-                <Route path="/Soviet">
-                    <div />
+                <Route
+                    path="/Soviet"
+                    render={(props) => <Main fraction="Soviet" {...props} />}>
                 </Route>
-                <Route path="/Us">
-                    <Main fraction="Us" />
+                <Route
+                    path="/Us"
+                    render={(props) => <Main fraction="Us" {...props} />}>
                 </Route>
-                <Route path="/British">
-                    <Main fraction="British" />
+                <Route
+                    path="/British"
+                    render={(props) => <Main fraction="British" {...props} />}>>
                 </Route>
-                <Route path="/">
-                    <Main fraction="Wehrmacht" />
+                <Route
+                    path="/"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
                 </Route>
                 </Switch>
         </Router>
