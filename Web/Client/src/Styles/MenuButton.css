@@ -9,7 +9,7 @@ li.menu {
     display: table-cell;
 }
 
-li.menu:hover {
+li.menu:hover, li.active{
     background-image: url(/Images/Fundamentals/MenuButtonHover.png);
     cursor: pointer;
 }

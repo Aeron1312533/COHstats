@@ -10,8 +10,10 @@ export default class MenuButton extends React.Component {
     }
 
     render() {
+        let liClass = (this.props.isActive == true) ? "menu active" : "menu";
+
         return (
-            <li className="menu" key={this.props.text}>
+            <li className={liClass} key={this.props.text}>
                 <a>{this.props.text}</a>
             </li>
         )
