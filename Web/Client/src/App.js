@@ -26,7 +26,7 @@ export default function App() {
                     <Main fraction="Oberkommando" />
                 </Route>
                 <Route path="/Soviet">
-                    <Main fraction="Soviet" />
+                    <div />
                 </Route>
                 <Route path="/Us">
                     <Main fraction="Us" />
