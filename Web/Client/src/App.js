@@ -17,7 +17,7 @@ export default function App() {
                     <Fefe />
                 </Route>
                 <Route
-                    path="/Wehrmacht/Commanders"
+                    path="/Wehrmacht/Commanders/:id"
                     render={(props) => <Main fraction="Wehrmacht" {...props} />}>
                 </Route>
                 <Route
