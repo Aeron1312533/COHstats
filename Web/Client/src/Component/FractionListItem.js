@@ -18,7 +18,7 @@ export default class FractionListItem extends React.Component {
 
         return (
             <li className="fraction">
-                <a href={href} ><img className={imgClass} src={source} alt={this.state.text} /></a>
+                <Link to={href} ><img className={imgClass} src={source} alt={this.state.text} /></Link>
             </li>
         )
     }
