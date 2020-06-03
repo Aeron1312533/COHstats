@@ -4,9 +4,6 @@ import '../Styles/MenuButton.css';
 export default class MenuButton extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            text: props.text
-        };
     }
 
     componentDidMount() {
@@ -15,7 +12,7 @@ export default class MenuButton extends React.Component {
     render() {
         return (
             <li className="menu" key={this.state.text}>
-                <a>{this.state.text}</a>
+                <a>{this.props.text}</a>
             </li>
         )
     }

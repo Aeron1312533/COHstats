@@ -38,7 +38,7 @@ export default function App() {
                 </Route>
                 <Route
                     path="/British"
-                    render={(props) => <Main fraction="British" {...props} />}>>
+                    render={(props) => <Main fraction="British" {...props} />}>
                 </Route>
                 <Route
                     path="/"

@@ -5,17 +5,13 @@ import '../Styles/CommandersList.css';
 export default class CommandersList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            commanders: props.commanders,
-            active: props.active
-        };
     }
 
     list = () => {
-        return this.state.commanders.map(element => {
-            let isActive = (element == this.state.active) ? true : false;
+        return this.props.commanders.map(element => {
+            let isActive = (element == this.props.active) ? true : false;
             return (
-                <CommanderListItem type={element} text="Mechanized Assault Doctrine" isActive={isActive} key={element} />
+                <CommanderListItem {...this.props} type={element} text="Mechanized Assault Doctrine" isActive={isActive} key={element} />
             );
         });
     };

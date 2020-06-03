@@ -13,7 +13,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <div className="body">
-                <CommandersList commanders={['1', '1', '1', '1', '1']} active='false' />
+                <CommandersList {...this.props} commanders={['1', '1', '1', '1', '1']} active='false' />
             </div>
         )
     }
