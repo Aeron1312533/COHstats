@@ -16,6 +16,9 @@ export default function App() {
                 <Route path="/fefe">
                     <Fefe />
                 </Route>
+                <Route path="/Wehrmacht/Commanders/">
+                    <Main fraction="Wehrmacht" />
+                </Route>
                 <Route path="/Wehrmacht">
                     <Main fraction="Wehrmacht" />
                 </Route>

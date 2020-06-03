@@ -16,6 +16,8 @@ export default class Header extends React.Component {
     }
 
     render() {
+        console.log("render");
+        console.log(this.state.fraction);
         return (
             <div className="header">
                 <div className="headerLeft">
