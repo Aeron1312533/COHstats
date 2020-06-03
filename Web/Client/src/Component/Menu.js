@@ -14,10 +14,10 @@ export default class Menu extends React.Component {
         return (
             <div className="menu">
                 <ul className="menu">
-                    <MenuButton text="Commanders" />
-                    <MenuButton text="Units" />
-                    <MenuButton text="Buildings" />
-                    <MenuButton text="Abilities" />
+                    <MenuButton {...props} text="Commanders" />
+                    <MenuButton {...props} text="Units" />
+                    <MenuButton {...props} text="Buildings" />
+                    <MenuButton {...props} text="Abilities" />
                 </ul>
             </div>
         )
