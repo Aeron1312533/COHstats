@@ -6,6 +6,7 @@ import './Styles/Main.css';
 export default class Main extends React.Component {
     constructor(props) {
         super(props);
+        console.log(props);
         this.state = {
             error: null,
             isLoaded: false,
@@ -15,7 +16,7 @@ export default class Main extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://coh2stats.online/api/v1/showall")
+       /* fetch("http://coh2stats.online/api/v1/showall")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -33,12 +34,11 @@ export default class Main extends React.Component {
                         error
                     });
                 }
-            )
+            )*/
     }
 
     render() {
         const { error, isLoaded, items } = this.state;
-        console.log(items);
         return (
             <div>
                 <Header fraction={this.state.fraction} />
