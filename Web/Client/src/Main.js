@@ -16,7 +16,7 @@ export default class Main extends React.Component {
     }
 
     componentDidMount() {
-       /* fetch("http://coh2stats.online/api/v1/showall")
+        fetch("http://coh2stats.online/api/v1/showall")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -34,7 +34,7 @@ export default class Main extends React.Component {
                         error
                     });
                 }
-            )*/
+            )
     }
 
     render() {
