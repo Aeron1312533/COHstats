@@ -10,8 +10,7 @@ export default class Main extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: [],
-            fraction: props.fraction
+            items: []
         };
     }
 
@@ -41,8 +40,8 @@ export default class Main extends React.Component {
         const { error, isLoaded, items } = this.state;
         return (
             <div>
-                <Header fraction={this.state.fraction} />
-                <Body fraction={this.state.fraction} />
+                <Header {...props} />
+                <Body {...props} />
             </div>
         )
     }

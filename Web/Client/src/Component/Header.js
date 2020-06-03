@@ -7,9 +7,6 @@ import FractionsList from './FractionsList';
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            fraction: props.fraction
-        };
     }
 
     componentDidMount() {
@@ -29,7 +26,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className="headerRight">
-                    <FractionsList fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.state.fraction} />
+                    <FractionsList {...props} fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.props.fraction} />
                 </div>
                 <Menu />
                 <UpdateInfo />
