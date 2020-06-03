@@ -26,7 +26,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className="headerRight">
-                    <FractionsList {...props} fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.props.fraction} />
+                    <FractionsList {...this.props} fractions={['Wehrmacht', 'Oberkommando', 'Soviet', 'Us', 'British']} active={this.props.fraction} />
                 </div>
                 <Menu />
                 <UpdateInfo />

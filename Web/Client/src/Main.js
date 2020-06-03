@@ -40,8 +40,8 @@ export default class Main extends React.Component {
         const { error, isLoaded, items } = this.state;
         return (
             <div>
-                <Header {...props} />
-                <Body {...props} />
+                <Header {...this.props} />
+                <Body {...this.props} />
             </div>
         )
     }

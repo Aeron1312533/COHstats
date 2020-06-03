@@ -5,16 +5,13 @@ import '../Styles/FractionsList.css';
 export default class FractionsList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            fractions: props.fractions
-        };
     }
 
     list = () => {
-        return this.state.fractions.map(element => {
+        return this.props.fractions.map(element => {
             let isActive = (element == this.props.active) ? true : false;
             return (
-                <FractionListItem type={element} text="random" isActive={isActive} key={element} />
+                <FractionListItem {...this.props} type={element} text="random" isActive={isActive} key={element} />
             );
         });
     };
