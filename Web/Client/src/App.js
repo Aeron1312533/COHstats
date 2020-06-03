@@ -19,8 +19,9 @@ export default function App() {
                 <Route path="/Wehrmacht/Commanders/">
                     <Main fraction="Wehrmacht" />
                 </Route>
-                <Route path="/Wehrmacht">
-                    <Main fraction="Wehrmacht" />
+                <Route
+                    path="/Wehrmacht"
+                    render={(props) => <Main fraction="Wehrmacht" {...props} />}>
                 </Route>
                 <Route path="/Oberkommando">
                     <Main fraction="Oberkommando" />
