@@ -10,6 +10,7 @@ export default class MenuButton extends React.Component {
     }
 
     render() {
+        console.log(this.props);
         let liClass = (this.props.page == this.props.text) ? "menu active" : "menu";
 
         return (
