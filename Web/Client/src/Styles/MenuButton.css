@@ -5,8 +5,8 @@ li.menu {
     width: 150px;
     height: 60px;
     color: white;
-    vertical-align: middle;
-    display: table-cell;
+    display: table;
+    float:left;
 }
 
     li.menu:hover, li.active {
