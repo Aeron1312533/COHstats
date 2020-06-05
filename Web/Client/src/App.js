@@ -9,7 +9,7 @@ import {
     Link
 } from "react-router-dom";
 
-console.log(process.env);
+
 export default function App() {
     return (
         <Router>
