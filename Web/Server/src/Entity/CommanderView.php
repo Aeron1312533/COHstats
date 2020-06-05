@@ -42,7 +42,7 @@ class CommanderView
     private $isInDefaultBundle;
 
     final function __set($name, $value) {
-	    if (!isset($this->_props[$name])) {
+	    if (!isset($this->{$name})) {
 	      throw new Exception("Undefined property '$name'.");
 	    } elseif (method_exists($this, 'set'.$name)) {
 	      $this->{'set'.$name}($value);
@@ -53,17 +53,13 @@ class CommanderView
 
 
   final function __get($name) {
-	    if (!isset($this->_props[$name])) {
+	    if (!isset($this->{$name})) {
 	      throw new Exception("Undefined property '$name'.");
 	    } elseif (method_exists($this, 'get'.$name)) {
 	      return $this->{'get'.$name}();
 	    } else {
 	      return $this->{$name};
 	    }
-  }
-
-  public function getCommanderKey() {
-      return $this->commanderKey;
   }
 
 }
