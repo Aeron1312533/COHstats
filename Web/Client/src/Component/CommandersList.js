@@ -14,6 +14,7 @@ export default class CommandersList extends React.Component {
 
     componentDidMount() {
         //get fraction and load fraction commanders
+        console.log("here");
         let fraction = this.props.fraction;
         let url = this.props.config.API + "commanders/fraction/" + fraction;
         fetch(url)
@@ -46,7 +47,6 @@ export default class CommandersList extends React.Component {
         });
     };
     render() {
-        console.log("here");
         return (
             <div className="commanders">
                 <ul>
