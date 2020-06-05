@@ -47,7 +47,7 @@ class TestController extends AbstractController
         foreach ($commanders as $commander) {
                 var_dump($commander->getCommanderKey() );
             $resultArray[] = array(
-                "commanderKey" -> $commander->getCommanderKey()   
+                "commanderKey" -> (string) $commander->getCommanderKey()   
 			);
 		}
         return new JsonResponse($resultCommander);
