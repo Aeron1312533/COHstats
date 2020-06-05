@@ -44,7 +44,10 @@ class TestController extends AbstractController
             );
         }
 
-        return new JsonResponse(json_encode($commanders));
+        foreach ($commanders as $commander) {
+            var resultCommander = json_encode($commander);
+		}
+        return new JsonResponse(resultCommander);
 
         // or render a template
         // in the template, print things with {{ product.name }}
