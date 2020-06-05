@@ -44,7 +44,7 @@ export default function App() {
                 </Route>
                 <Route
                     path="/Soviet/Commanders"
-                    render={(props) => <Main config={config} fraction="Sovier" page="Commanders" {...props} />}>
+                    render={(props) => <Main config={config} fraction="Soviet" page="Commanders" {...props} />}>
                 </Route>
                 <Route
                     path="/Soviet"
