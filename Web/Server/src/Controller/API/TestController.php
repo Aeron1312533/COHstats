@@ -49,7 +49,7 @@ class TestController extends AbstractController
                 "commanderKey" => $commander->commanderKey 
 			);
 		}
-        return new JsonResponse($resultCommander);
+        return new JsonResponse($resultArray);
 
         // or render a template
         // in the template, print things with {{ product.name }}
