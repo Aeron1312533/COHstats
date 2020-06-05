@@ -46,6 +46,7 @@ export default class CommandersList extends React.Component {
         });
     };
     render() {
+        console.log("here");
         return (
             <div className="commanders">
                 <ul>
