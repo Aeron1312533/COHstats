@@ -45,7 +45,7 @@ class TestController extends AbstractController
         }
         $resultArray = [];
         foreach ($commanders as $commander) {
-                var_dump($commander);
+                var_dump($commander->getCommanderKey() );
             $resultArray[] = array(
                 "commanderKey" -> $commander->getCommanderKey()   
 			);
