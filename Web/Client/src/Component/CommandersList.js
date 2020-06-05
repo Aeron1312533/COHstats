@@ -5,13 +5,40 @@ import '../Styles/CommandersList.css';
 export default class CommandersList extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            commanders: [],
+            isLoaded: false,
+            error: null
+        };
+    }
+
+    componentDidMount() {
+        fetch("http://coh2stats.online/api/v1/showall")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        commanders: result,
+                        isLoaded: true
+                    });
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error: error
+                    });
+                }
+            )
     }
 
     list = () => {
-        return this.props.commanders.map(element => {
-            let isActive = (element == this.props.active) ? true : false;
+        return this.state.commanders.map(element => {
+            //let isActive = (element == this.props.active) ? true : false;
             return (
-                <CommanderListItem {...this.props} type={element} text="Mechanized Assault Doctrine" isActive={isActive} key={element} />
+                <CommanderListItem {...this.props} commanderInfo={element} key={element.commanderKey} />
             );
         });
     };

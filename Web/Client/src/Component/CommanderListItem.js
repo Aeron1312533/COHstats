@@ -5,23 +5,21 @@ import CommanderAbilities from './CommanderAbilities';
 export default class CommanderListItem extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            type: props.type,
-            text: props.text,
-            isActive: props.isActive
-        };
     }
 
     render() {
-        let source = "/Images/Commanders/" + this.state.type + ".png";
+        let commanderInfo = this.props.commanderInfo;
+        let source = "/Images/Commanders/1.png";
+        let description = commanderInfo.description;
+        let name = commanderInfo.name;
         //let href = "/" + this.state.type;
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 
         return (
             <li className="commanderListItem">
-                <div className="commanderName">{this.state.text}</div>
-                <img className="commanderIcon" src={source} alt={this.state.text} />
-                <CommanderAbilities abilities={[1, 2, 3, 4, 5]} />
+                <div className="commanderName">{name}</div>
+                <img className="commanderIcon" src={source} alt={name} />
+                <CommanderAbilities {...this.props} abilities={[1, 2, 3, 4, 5]} />
             </li>
         )
     }
