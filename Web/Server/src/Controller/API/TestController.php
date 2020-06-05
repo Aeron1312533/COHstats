@@ -46,7 +46,14 @@ class TestController extends AbstractController
         $resultArray = [];
         foreach ($commanders as $commander) {
             $resultArray[] = array(
-                "commanderKey" => $commander->commanderKey 
+                "commanderKey" => $commander->commanderKey,
+                "description" => $commander->description,
+                "icon" => $commander->icon,
+                "iconSecondary" => $commander->iconSecondary,
+                "name" => $commander->name,
+                "race" => $commander->race,
+                "isInDefaultBundle" => $commander->isInDefaultBundle
+
 			);
 		}
         return new JsonResponse($resultArray);
