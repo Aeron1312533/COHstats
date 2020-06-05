@@ -14,7 +14,7 @@ class FractionMapper {
             case "Oberkommando":
                 return "Oberkommando West";
             case "British":
-                return "British Forces"
+                return "British Forces";
             default:
                 throw new Exception("Unknown fraction");
 		}
