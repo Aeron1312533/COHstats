@@ -9,7 +9,7 @@ export default class FractionListItem extends React.Component {
 
     render() {
         let source = "/Images/Fractions/" + this.props.type + ".png";
-        let href = "/" + this.props.type;
+        let href = "/" + this.props.type + "/" + this.props.page;
         let imgClass = (this.props.isActive == true) ? "active" : "";
 
         return (
