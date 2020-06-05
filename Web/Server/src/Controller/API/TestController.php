@@ -43,7 +43,6 @@ class TestController extends AbstractController
                 'No commanders found'
             );
         }
-		}
         return new JsonResponse($commanders);
 
         // or render a template
