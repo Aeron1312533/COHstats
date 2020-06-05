@@ -5,13 +5,15 @@ li.menu {
     width: 150px;
     height: 60px;
     color: white;
-    display: table;
+    vertical-align: middle;
+    display: table-cell;
 }
 
     li.menu:hover, li.active {
         background-image: url(/Images/Fundamentals/MenuButtonHover.png);
         cursor: pointer;
-        display: table;
+        vertical-align: middle;
+        display: table-cell;
     }
 
     li.menu a {
