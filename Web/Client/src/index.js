@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import dotenv from 'dotenv';
 
-dotenv.config();
-console.log(process.env);
+process.env.API = "peter";
 ReactDOM.render(
   <React.StrictMode>
     <App />
