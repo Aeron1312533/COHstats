@@ -12,8 +12,7 @@ li.menu {
     li.menu:hover, li.active {
         background-image: url(/Images/Fundamentals/MenuButtonHover.png);
         cursor: pointer;
-        vertical-align: middle;
-        display: table-cell;
+        display: table;
     }
 
     li.menu a {
