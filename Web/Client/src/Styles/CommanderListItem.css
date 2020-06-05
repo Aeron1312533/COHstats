@@ -21,11 +21,11 @@ li.commanderListItem {
     }
 
     li.commanderListItem img.commanderIcon {
-        height: 85px;
+        height: 88px;
         width: 70px;
         float: left;
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 18px;
+        margin-left: 23px;
     }
 
     li.commanderListItem div.commanderName {
