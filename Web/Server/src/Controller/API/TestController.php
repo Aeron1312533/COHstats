@@ -38,13 +38,13 @@ class TestController extends AbstractController
             ->getRepository(CommanderView::class)
             ->findAll();
 
-        var_dump($commanders);
         if (!$commanders) {
             throw $this->createNotFoundException(
                 'No commanders found'
             );
         }
-        return new JsonResponse($commanders);
+
+        return new JsonResponse(json_encode($commanders));
 
         // or render a template
         // in the template, print things with {{ product.name }}
