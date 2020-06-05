@@ -58,7 +58,7 @@ class CommanderView
 	    } elseif (method_exists($this, 'get'.$name)) {
 	      return $this->{'get'.$name}();
 	    } else {
-	      return $this->{'_'.$name};
+	      return $this->{$name};
 	    }
   }
 
