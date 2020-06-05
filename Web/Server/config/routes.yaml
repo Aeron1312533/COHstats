@@ -16,3 +16,8 @@ api_test_showAll:
     path: /v1/showall
     controller: App\Controller\API\TestController::showAll
     methods: GET|HEAD
+
+api_commanders:
+    path: /v1/commanders/fraction/{name}
+    controller: App\Controller\API\TestController::show
+    methods: GET|HEAD

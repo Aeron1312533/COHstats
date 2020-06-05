@@ -6,12 +6,12 @@ use Doctrine\ORM\EntityRepository;
 
 class CommanderViewRepository extends EntityRepository
 {
-    public function findAll()
-    {
+    public function findByFraction($name) {
         return $this->getEntityManager()
             ->createQuery(
-                'SELECT cv FROM App\Entity\CommanderView cv'
+                'SELECT cv FROM App\Entity\CommanderView cv WHERE cv.race = :name'
             )
+            ->setParameter('name', $name)
             ->getResult();
     }
 }
