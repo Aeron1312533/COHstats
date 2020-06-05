@@ -15,7 +15,7 @@ export default class CommandersList extends React.Component {
     componentDidMount() {
         //get fraction and load fraction commanders
         let fraction = this.props.fraction;
-        let url = this.props.config.API + "/commanders/fraction/" + fraction;
+        let url = this.props.config.API + "commanders/fraction/" + fraction;
         fetch(url)
             .then(res => res.json())
             .then(
