@@ -38,6 +38,7 @@ class TestController extends AbstractController
             ->getRepository(CommanderView::class)
             ->findAll();
 
+        var_dump($commanders);
         if (!$commanders) {
             throw $this->createNotFoundException(
                 'No commanders found'
