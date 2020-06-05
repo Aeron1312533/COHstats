@@ -68,7 +68,7 @@ export default function App() {
                 </Route>
                 <Route
                     path="/"
-                    render={(props) => <Main config={config} fraction="Wehrmacht" page="Home" {...props} />}>
+                    render={(props) => <Main config={config} fraction="Wehrmacht" page="Commanders" {...props} />}>
                 </Route>
                 </Switch>
         </Router>
