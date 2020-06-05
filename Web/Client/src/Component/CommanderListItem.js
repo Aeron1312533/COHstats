@@ -9,7 +9,7 @@ export default class CommanderListItem extends React.Component {
 
     render() {
         let commanderInfo = this.props.commanderInfo;
-        let source = "/Images/Commanders/1.png";
+        let source = "/Images/Commanders/" + commanderInfo.iconSecondary + ".png";
         let description = commanderInfo.description;
         let name = commanderInfo.name;
         //let href = "/" + this.state.type;
