@@ -10,10 +10,15 @@ export default class Body extends React.Component {
     componentDidMount() {
     }
 
+    returnPage(page) {
+        if (page == "Commanders") {
+            return (<CommandersList {...this.props} active='false' />);
+        }
+    }
     render() {
         return (
             <div className="body">
-                <CommandersList {...this.props} active='false' />
+                {this.returnPage(this.props.page)}
             </div>
         )
     }
