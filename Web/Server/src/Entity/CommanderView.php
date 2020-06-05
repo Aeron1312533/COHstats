@@ -62,4 +62,8 @@ class CommanderView
 	    }
   }
 
+  public function getCommanderKey() {
+      return $this->commanderKey;
+  }
+
 }
