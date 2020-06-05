@@ -6,7 +6,7 @@ import App from './App';
 const config = require('./config.json');
 ReactDOM.render(
   <React.StrictMode>
-        <App config={config}/>
+        <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
