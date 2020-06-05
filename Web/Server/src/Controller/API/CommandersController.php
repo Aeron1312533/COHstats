@@ -5,6 +5,7 @@ namespace App\Controller\API;
 
 // ...
 use App\Entity\CommanderView;
+use App\Utils\FractionMapper;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -34,7 +35,7 @@ class CommandersController extends AbstractController
     public function showAll($name) {
         $commanders = $this->getDoctrine()
             ->getRepository(CommanderView::class)
-            ->findByFraction($name);
+            ->findByFraction(FractionMapper::map($name));
 
         if (!$commanders) {
             throw $this->createNotFoundException(
