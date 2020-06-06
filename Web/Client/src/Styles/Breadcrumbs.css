@@ -5,7 +5,6 @@ div.breadcrumbs {
     width: 544px;
     height: 40px;
     clear: both;
-    display: table;
 }
 
     div.breadcrumbs a {
@@ -15,3 +14,7 @@ div.breadcrumbs {
         vertical-align: middle;
         display: table-cell;
     }
+
+div.breadcrumbsItem {
+    display: table;
+}

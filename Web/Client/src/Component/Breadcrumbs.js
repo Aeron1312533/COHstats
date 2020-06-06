@@ -22,7 +22,7 @@ export default class Breadcrumbs extends React.Component {
             }
 
             return (
-                <span><span className="breadcrumbsSeparator">{this.props.separator}</span><Link to={href}>{link.text}</Link></span>
+                <div className="breadcrumbsItem"><span className="breadcrumbsSeparator">{this.props.separator}</span><Link to={href}>{link.text}</Link></div>
             );
         });
     };
