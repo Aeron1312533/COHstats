@@ -7,12 +7,15 @@ div.commanderListItem {
     color: white;
     float:left;
     list-style-type: none;
+    opacity: 0.5;
 }
 
-    div.commanderListItem:hover {
+    div.commanderListItem:hover, div.commanderListItem.active {
         background-image: url(/Images/Fundamentals/ListItemHover.png);
         cursor: pointer;
+        opacity: 1;
     }
+
 
     div.commanderListItem a {
         display: block;
