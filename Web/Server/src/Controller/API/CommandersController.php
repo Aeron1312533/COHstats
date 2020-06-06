@@ -36,7 +36,7 @@ class CommandersController extends AbstractController
 
 			);
 
-        return new Response($resultArray);
+        return new JsonResponse($resultArray);
 
         // or render a template
         // in the template, print things with {{ product.name }}
