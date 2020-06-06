@@ -11,7 +11,7 @@ export default class Breadcrumbs extends React.Component {
             //let isActive = (element == this.props.active) ? true : false;
             let href = "/" + this.props.type + "/" + this.props.page;
             return (
-                <span className="breadcrumbsSeparator">{this.props.separator}</span><Link to={href}>{link.text}</Link>
+                <span><span className="breadcrumbsSeparator">{this.props.separator}</span><Link to={href}>{link.text}</Link></span>
             );
         });
     };
