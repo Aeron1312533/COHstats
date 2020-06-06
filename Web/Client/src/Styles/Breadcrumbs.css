@@ -17,4 +17,5 @@ div.breadcrumbs {
 
 div.breadcrumbsItem {
     display: table;
+    float:left;
 }
