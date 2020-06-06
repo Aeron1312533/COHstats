@@ -20,7 +20,7 @@ export default class CommanderListItem extends React.Component {
         } else {
             commanderClass = "commanderListItem";
         }
-        let href = "/" + this.props.fraction + "/" + this.prop.page + "/" + commanderInfo.commanderKey;
+        let href = "/" + this.props.fraction + "/" + this.props.page + "/" + commanderInfo.commanderKey;
 
         return (
             <Link to={href}>
