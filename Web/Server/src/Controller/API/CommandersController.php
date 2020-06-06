@@ -25,16 +25,8 @@ class CommandersController extends AbstractController
             );
         }
 
-        $resultArray[] = array(
-                "commanderKey" => $commander->commanderKey,
-                "description" => $commander->description,
-                "icon" => $commander->icon,
-                "iconSecondary" => $commander->iconSecondary,
-                "name" => $commander->name,
-                "race" => $commander->race,
-                "isInDefaultBundle" => $commander->isInDefaultBundle
-
-			);
+        $resultArray = "";
+        var_dump($commander);
 
         return new Response($resultArray);
 
