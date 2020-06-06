@@ -1,4 +1,4 @@
-li.commanderListItem {
+div.commanderListItem {
     background-image: url(/Images/Fundamentals/ListItem.png);
     background-repeat: no-repeat;
     background-size: 400px 120px;
@@ -9,18 +9,18 @@ li.commanderListItem {
     list-style-type: none;
 }
 
-    li.commanderListItem:hover {
+    div.commanderListItem:hover {
         background-image: url(/Images/Fundamentals/ListItemHover.png);
         cursor: pointer;
     }
 
-    li.commanderListItem a {
+    div.commanderListItem a {
         display: block;
         color: white;
         text-decoration: none;
     }
 
-    li.commanderListItem img.commanderIcon {
+    div.commanderListItem img.commanderIcon {
         height: 88px;
         width: 70px;
         float: left;
@@ -28,7 +28,7 @@ li.commanderListItem {
         margin-left: 22px;
     }
 
-    li.commanderListItem div.commanderName {
+    div.commanderListItem div.commanderName {
         float: right;
         margin-top: 15px;
         margin-right: 20px;

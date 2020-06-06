@@ -16,11 +16,11 @@ export default class CommanderListItem extends React.Component {
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 
         return (
-            <li className="commanderListItem">
+            <div className="commanderListItem">
                 <div className="commanderName">{name}</div>
                 <img className="commanderIcon" src={source} alt={name} />
                 <CommanderAbilities {...this.props} abilities={[1, 2, 3, 4, 5]} />
-            </li>
+            </div>
         )
     }
 }
