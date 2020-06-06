@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import '../Styles/Breadcrumbs.css';
 
 export default class Breadcrumbs extends React.Component {
     constructor(props) {
