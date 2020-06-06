@@ -12,7 +12,7 @@ export default class Breadcrumbs extends React.Component {
             let href = () => {
                 switch (link.type) {
                     case "page":
-                        return ("/" + this.props.page + "/" + link.link);
+                        return ("/" + this.props.fraction + "/" + link.link);
                     case "fraction":
                         return ("/" + link.link);
                     default:

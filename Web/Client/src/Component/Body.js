@@ -40,7 +40,7 @@ export default class Body extends React.Component {
     render() {
         return (
             <div className="body">
-                <Breadcrumbs links={this.getBreadcrumbs()} separator=" > "/>
+                <Breadcrumbs {...this.props} links={this.getBreadcrumbs()} separator=" > "/>
                 {this.returnPage(this.props.page)}
             </div>
         )
