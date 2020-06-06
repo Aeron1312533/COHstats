@@ -47,7 +47,6 @@ export default class CommandersList extends React.Component {
 
     list = () => {
         return this.state.commanders.map(element => {
-            //let isActive = (element == this.props.active) ? true : false;
             return (
                 <CommanderListItem {...this.props} commanderInfo={element} key={element.commanderKey} />
             );
