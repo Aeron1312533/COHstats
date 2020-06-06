@@ -4,3 +4,7 @@ div.commanders {
     padding-bottom: 15px;
     padding-right: 15px;
 }
+
+.react-multiple-carousel__arrow {
+    background: rgb(255,255,255,0.7) !important;
+}
