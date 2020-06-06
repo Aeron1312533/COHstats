@@ -17,7 +17,9 @@ export default class Body extends React.Component {
     }
     render() {
         return (
+            <div className="body">
                 {this.returnPage(this.props.page)}
+            </div>
         )
     }
 }
