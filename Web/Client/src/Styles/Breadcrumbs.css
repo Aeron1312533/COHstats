@@ -1,4 +1,8 @@
 div.breadcrumbs {
     background-image: url(/Images/Fundamentals/breadcrumbs.png);
     background-repeat: no-repeat;
+    background-size: 544px 40px;
+    width: 544px;
+    height: 40px;
+    clear: both;
 }
