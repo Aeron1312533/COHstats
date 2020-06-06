@@ -35,7 +35,7 @@ export default class Breadcrumbs extends React.Component {
                 }
             }
 
-            return ({ this.ret() });
+            return ret;
         });
     };
 
