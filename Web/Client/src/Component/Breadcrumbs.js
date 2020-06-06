@@ -20,9 +20,9 @@ export default class Breadcrumbs extends React.Component {
                         return "";
                 }
             }
-
+            let linkClass = (link.active ? "active" : "");
             return (
-                <div className="breadcrumbsItem"><div className="breadcrumbsSeparator">{this.props.separator}</div><Link to={href}>{link.text}</Link></div>
+                <div className="breadcrumbsItem"><div className="breadcrumbsSeparator">{this.props.separator}</div><Link className={linkClass} to={href}>{link.text}</Link></div>
             );
         });
     };

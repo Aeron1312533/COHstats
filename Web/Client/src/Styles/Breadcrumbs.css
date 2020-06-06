@@ -15,6 +15,10 @@ div.breadcrumbs {
         display: table-cell;
     }
 
+        div.breadcrumbs a:hover, div.breadcrumbs a.active {
+            color: goldenrod;
+        }
+
 div.breadcrumbsItem {
     display: table;
     float:left;

@@ -24,14 +24,16 @@ export default class Body extends React.Component {
             {
                 link: this.props.fraction,
                 text: this.props.fraction,
-                type: "fraction"
+                type: "fraction",
+                active: false
             }
         );
         links.push(
             {
                 link: this.props.page,
                 text: this.props.page,
-                type: "page"
+                type: "page",
+                active: true
             }
         );
 
