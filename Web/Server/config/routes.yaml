@@ -19,5 +19,10 @@ api_test_showAll:
 
 api_commanders:
     path: /v1/commanders/fraction/{name}
-    controller: App\Controller\API\CommandersController::showAll
+    controller: App\Controller\API\CommandersController::findAll
+    methods: GET|HEAD
+
+api_commander_id:
+    path: /v1/commander/id/{id}
+    controller: App\Controller\API\CommandersController::findById
     methods: GET|HEAD

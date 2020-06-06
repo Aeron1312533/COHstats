@@ -14,18 +14,29 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
  
 class CommandersController extends AbstractController
 {
-    public function show($id) {
-        $product = $this->getDoctrine()
-            ->getRepository(PeterTest::class)
-            ->find($id);
+    public function findById($id) {
+        $commander = $this->getDoctrine()
+            ->getRepository(CommanderView::class)
+            ->findById($id);
 
-        if (!$product) {
+        if (!$commander) {
             throw $this->createNotFoundException(
                 'No product found for id '.$id
             );
         }
 
-        return new Response('Check out this great product: '.$product->getValue());
+        $resultArray[] = array(
+                "commanderKey" => $commander->commanderKey,
+                "description" => $commander->description,
+                "icon" => $commander->icon,
+                "iconSecondary" => $commander->iconSecondary,
+                "name" => $commander->name,
+                "race" => $commander->race,
+                "isInDefaultBundle" => $commander->isInDefaultBundle
+
+			);
+
+        return new Response($resultArray);
 
         // or render a template
         // in the template, print things with {{ product.name }}

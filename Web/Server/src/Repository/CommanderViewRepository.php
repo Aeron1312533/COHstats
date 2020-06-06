@@ -14,4 +14,13 @@ class CommanderViewRepository extends EntityRepository
             ->setParameter('name', $name)
             ->getResult();
     }
+
+    public function findById($id) {
+        return $this->getEntityManager()
+            ->createQuery(
+                'SELECT cv FROM App\Entity\CommanderView cv WHERE cv.commanderKey = :id'
+            )
+            ->setParameter('id', $id)
+            ->getResult();
+    }
 }
