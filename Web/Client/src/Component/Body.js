@@ -17,7 +17,7 @@ export default class Body extends React.Component {
             return (
                 <div id="commanderPage">
                     <CommandersList {...this.props} />
-                    <CommanderDetail {...this.props} />
+                    <CommanderDetail {...this.props} commanderKey={this.props.match.params.id} />
                 </div>
             );
         }

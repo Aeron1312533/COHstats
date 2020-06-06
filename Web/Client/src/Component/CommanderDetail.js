@@ -35,7 +35,7 @@ export default class CommanderDetail extends React.Component {
             )
     }
     componentDidMount() {
-        this.loadData(this.props.match.params.id);
+        this.loadData(this.props.commanderKey);
     }
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.commanderKey != this.props.commanderKey) {
