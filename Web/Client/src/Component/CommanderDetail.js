@@ -46,7 +46,7 @@ export default class CommanderDetail extends React.Component {
     render() {
        
         return (
-            <div>ahoj
+            <div>{this.state.data.description}
             </div>
         )
     }
