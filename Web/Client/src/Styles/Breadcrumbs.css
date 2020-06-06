@@ -33,3 +33,8 @@ div.breadcrumbsSeparator {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+img.breadcrumbsIcon {
+    width: 20px;
+    height: 20px;
+}
