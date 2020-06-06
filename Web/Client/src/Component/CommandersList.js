@@ -81,6 +81,7 @@ export default class CommandersList extends React.Component {
                     slidesToSlide={2}
                     showDots
                     renderDotsOutside
+                    partialVisible
                 >
                     {this.list()}
                 </Carousel>
