@@ -10,7 +10,7 @@ div.commanderListItem {
     opacity: 0.5;
 }
 
-    div.commanderListItem:hover, div.commanderListItem.active {
+    div.commanderListItem:hover, div.commanderListItem-active {
         background-image: url(/Images/Fundamentals/ListItemHover.png);
         cursor: pointer;
         opacity: 1;

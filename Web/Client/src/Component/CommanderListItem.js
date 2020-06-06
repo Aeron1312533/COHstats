@@ -13,8 +13,7 @@ export default class CommanderListItem extends React.Component {
         let description = commanderInfo.description;
         let name = commanderInfo.name;
         let commanderClass = "";
-        console.log(commanderInfo);
-        console.log(this.props.match.params.id);
+
         if (commanderInfo.commanderKey == this.props.match.params.id) {
             commanderClass = "commanderListItem commanderListItem-active";
         } else {
