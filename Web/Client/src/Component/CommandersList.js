@@ -75,7 +75,13 @@ export default class CommandersList extends React.Component {
         };
         return (
             <div className="commanders">
-                <Carousel responsive={responsive}>
+                <Carousel
+                    responsive={responsive}
+                    draggable={false}
+                    slidesToSlide={2}
+                    showDots
+                    renderDotsOutside
+                >
                     {this.list()}
                 </Carousel>
             </div>
