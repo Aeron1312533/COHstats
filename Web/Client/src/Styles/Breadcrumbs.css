@@ -22,7 +22,10 @@ div.breadcrumbsItem {
 }
 
 div.breadcrumbsSeparator {
-    float:left;
-    display: inline-block;
+    display: table-cell;
     color: white;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
 }
