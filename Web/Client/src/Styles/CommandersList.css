@@ -1,18 +1,5 @@
 div.commanders {
     clear: both;
     position: relative;
-}
-
-.carouselDots {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    margin: auto;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
+    padding-bottom: 15px;
 }
