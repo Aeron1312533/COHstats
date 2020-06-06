@@ -34,7 +34,7 @@ export default class Body extends React.Component {
                 type: "page"
             }
         );
-        );
+
         return links;
     }
     render() {
