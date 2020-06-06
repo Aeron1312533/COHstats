@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/CommanderDetails.css';
+import '../Styles/CommanderDetail.css';
 
 export default class CommanderDetail extends React.Component {
     constructor(props) {
