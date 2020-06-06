@@ -26,16 +26,15 @@ export default class Breadcrumbs extends React.Component {
 
                 switch (link.type) {
                     case "page":
-                        return (<div className="breadcrumbsItem"><div className="breadcrumbsSeparator">{this.props.separator}</div><Link className={linkClass} to={href}>{link.text}</Link></div>)
+                        return (<div className="breadcrumbsItem"><div className="breadcrumbsSeparator">{this.props.separator}</div><Link className={linkClass} to={href()}>{link.text}</Link></div>)
                     case "fraction":
                         let imgSrc = "/Images/Fractions/" + this.props.type + ".png";
-                        return (<div className="breadcrumbsItem"><img src={imgSrc} className="breadcrumbsIcon" /><Link className={linkClass} to={href}>{link.text}</Link></div>);
+                        return (<div className="breadcrumbsItem"><img src={imgSrc} className="breadcrumbsIcon" /><Link className={linkClass} to={href()}>{link.text}</Link></div>);
                     default:
                         return "";
                 }
             }
-            console.log(ret);
-            return ret;
+            return ret();
         });
     };
 
