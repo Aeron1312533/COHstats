@@ -28,8 +28,7 @@ export default class Breadcrumbs extends React.Component {
                     case "page":
                         return (<div className="breadcrumbsItem"><div className="breadcrumbsSeparator">{this.props.separator}</div><Link className={linkClass} to={href()}>{link.text}</Link></div>)
                     case "fraction":
-                        let imgSrc = "/Images/Fractions/" + this.props.fraction + ".png";
-                        return (<div className="breadcrumbsItem"><img src={imgSrc} className="breadcrumbsIcon" /><Link className={linkClass} to={href()}>{link.text}</Link></div>);
+                        return (<div className="breadcrumbsItem"><Link className={linkClass} to={href()}>{link.text}</Link></div>);
                     default:
                         return "";
                 }
@@ -39,8 +38,10 @@ export default class Breadcrumbs extends React.Component {
     };
 
     render() {
+        let imgSrc = "/Images/Fractions/" + this.props.fraction + ".png";
         return (
             <div className="breadcrumbs">
+                <img src={imgSrc} className="breadcrumbsIcon" />
                 {this.list()}
             </div>
         )
