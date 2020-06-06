@@ -6,5 +6,9 @@ div.commanders {
 }
 
 .react-multiple-carousel__arrow {
-    background: rgb(255,255,255,0.7) !important;
+    background: rgba(255,255,255,0.7) !important;
 }
+
+    .react-multiple-carousel__arrow::before {
+        color: rgb(105,105,105);
+    }
