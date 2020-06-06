@@ -61,16 +61,18 @@ export default class CommandersList extends React.Component {
                 items: 3
             },
             desktop: {
-                breakpoint: { max: 3000, min: 1100 },
+                breakpoint: { max: 3000, min: 1200 },
                 items: 3
             },
             tablet: {
-                breakpoint: { max: 1100, min: 464 },
-                items: 2
+                breakpoint: { max: 1200, min: 464 },
+                items: 2,
+                partialVisibilityGutter: 30
             },
             mobile: {
                 breakpoint: { max: 464, min: 0 },
-                items: 1
+                items: 1,
+                partialVisibilityGutter: 30
             }
         };
         return (
@@ -81,6 +83,7 @@ export default class CommandersList extends React.Component {
                     slidesToSlide={2}
                     showDots
                     renderDotsOutside
+                    partialVisible
                 >
                     {this.list()}
                 </Carousel>
