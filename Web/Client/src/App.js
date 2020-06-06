@@ -35,12 +35,20 @@ export default function App() {
                     render={(props) => <Main config={config} fraction="Wehrmacht" page="Home" {...props} />}>
                 </Route>
                 <Route
+                    path="/Oberkommando/Commanders/:id"
+                    render={(props) => <Main config={config} fraction="Oberkommando" page="Commanders" {...props} />}>
+                </Route>
+                <Route
                     path="/Oberkommando/Commanders"
                     render={(props) => <Main config={config} fraction="Oberkommando" page="Commanders" {...props} />}>
                 </Route>
                 <Route
                     path="/Oberkommando"
                     render={(props) => <Main config={config} fraction="Oberkommando" page="Home" {...props} />}>
+                </Route>
+                <Route
+                    path="/Soviet/Commanders/:id"
+                    render={(props) => <Main config={config} fraction="Soviet" page="Commanders" {...props} />}>
                 </Route>
                 <Route
                     path="/Soviet/Commanders"
@@ -51,12 +59,20 @@ export default function App() {
                     render={(props) => <Main config={config} fraction="Soviet" page="Home" {...props} />}>
                 </Route>
                 <Route
+                    path="/Us/Commanders/:id"
+                    render={(props) => <Main config={config} fraction="Us" page="Commanders" {...props} />}>
+                </Route>
+                <Route
                     path="/Us/Commanders"
                     render={(props) => <Main config={config} fraction="Us" page="Commanders" {...props} />}>
                 </Route>
                 <Route
                     path="/Us"
                     render={(props) => <Main config={config} fraction="Us" page="Home" {...props} />}>
+                </Route>
+                <Route
+                    path="/British/Commanders/:id"
+                    render={(props) => <Main config={config} fraction="British" page="Commanders" {...props} />}>
                 </Route>
                 <Route
                     path="/British/Commanders"
