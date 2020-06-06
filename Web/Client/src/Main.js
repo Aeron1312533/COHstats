@@ -16,7 +16,7 @@ export default class Main extends React.Component {
     render() {
         const { error, isLoaded, items } = this.state;
         return (
-            <div>
+            <div id="content">
                 <Header {...this.props} />
                 <Body {...this.props} />
             </div>
