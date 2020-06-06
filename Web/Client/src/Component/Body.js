@@ -2,6 +2,7 @@ import React from 'react';
 import CommandersList from './CommandersList';
 import '../Styles/Body.css';
 import Breadcrumbs from './Breadcrumbs';
+import CommanderDetail from './CommanderDetail';
 
 export default class Body extends React.Component {
     constructor(props) {
@@ -13,7 +14,10 @@ export default class Body extends React.Component {
 
     returnPage(page) {
         if (page == "Commanders") {
-            return (<CommandersList {...this.props} active='false' />);
+            return (
+                <CommandersList {...this.props} />
+                <CommanderDetail {...this.props} />
+            );
         }
     }
 
