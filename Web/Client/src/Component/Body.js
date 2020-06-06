@@ -22,21 +22,18 @@ export default class Body extends React.Component {
 
         links.push(
             {
-                link: this.props.page,
-                text: this.props.page
+                link: this.props.fraction,
+                text: this.props.fraction,
+                type: "fraction"
             }
         );
         links.push(
             {
                 link: this.props.page,
-                text: this.props.page
+                text: this.props.page,
+                type: "page"
             }
         );
-        links.push(
-            {
-                link: this.props.page,
-                text: this.props.page
-            }
         );
         return links;
     }
