@@ -43,7 +43,7 @@ class CommandersController extends AbstractController
         // return $this->render('product/show.html.twig', ['product' => $product]);
     }
 
-    public function showAll($name) {
+    public function findAll($name) {
         $commanders = $this->getDoctrine()
             ->getRepository(CommanderView::class)
             ->findByFraction(FractionMapper::map($name));
