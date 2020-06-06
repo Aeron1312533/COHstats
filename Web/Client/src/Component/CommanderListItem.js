@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../Styles/CommanderListItem.css';
 import CommanderAbilities from './CommanderAbilities';
 
@@ -19,15 +20,16 @@ export default class CommanderListItem extends React.Component {
         } else {
             commanderClass = "commanderListItem";
         }
-        //let href = "/" + this.state.type;
-        //let imgClass = (this.state.isActive == true) ? "active" : "";
+        let href = "/" + this.props.fraction + "/" + this.prop.page + "/" + commanderInfo.commanderKey;
 
         return (
-            <div className={commanderClass}>
-                <div className="commanderName">{name}</div>
-                <img className="commanderIcon" src={source} alt={name} />
-                <CommanderAbilities {...this.props} abilities={[1, 2, 3, 4, 5]} />
-            </div>
+            <Link to={href}>
+                <div className={commanderClass}>
+                    <div className="commanderName">{name}</div>
+                    <img className="commanderIcon" src={source} alt={name} />
+                    <CommanderAbilities {...this.props} abilities={[1, 2, 3, 4, 5]} />
+                </div>
+            </Link>
         )
     }
 }
