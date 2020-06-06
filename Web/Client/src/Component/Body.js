@@ -15,8 +15,10 @@ export default class Body extends React.Component {
     returnPage(page) {
         if (page == "Commanders") {
             return (
-                <CommandersList {...this.props} />
-                <CommanderDetail {...this.props} />
+                <div id="commanderPage">
+                    <CommandersList {...this.props} />
+                    <CommanderDetail {...this.props} />
+                </div>
             );
         }
     }
