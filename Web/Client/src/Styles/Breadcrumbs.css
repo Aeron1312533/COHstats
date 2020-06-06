@@ -5,4 +5,13 @@ div.breadcrumbs {
     width: 544px;
     height: 40px;
     clear: both;
+    display: table;
 }
+
+    div.breadcrumbs a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        display: table-cell;
+    }
