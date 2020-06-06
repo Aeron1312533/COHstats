@@ -18,4 +18,11 @@ div.breadcrumbs {
 div.breadcrumbsItem {
     display: table;
     float:left;
+    height: 100%;
+}
+
+div.breadcrumbsSeparator {
+    float:left;
+    display: inline-block;
+    color: white;
 }
