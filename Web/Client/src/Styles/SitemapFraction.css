@@ -1,3 +1,12 @@
 div.sitemapFraction {
     float: left;
 }
+
+img.sitemapIcon {
+    width: 26px;
+    height: 26px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 18px;
+    padding-right: 5px;
+}

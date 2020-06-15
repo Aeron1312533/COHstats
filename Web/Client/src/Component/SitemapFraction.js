@@ -7,8 +7,10 @@ export default class SitemapFraction extends React.Component {
     }
 
     render() {
+        let imgSrc = "/Images/Fractions/" + this.props.fractionShortcut + ".png";
         return (
             <div className="sitemapFraction">
+                <img src={imgSrc} className="sitemapIcon" />
                 {this.props.fractionSitemap}
             </div>
         );
