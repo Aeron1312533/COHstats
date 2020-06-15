@@ -13,3 +13,9 @@ div.contactFormWrapper {
     width: 350px;
     margin-left: 20px;
 }
+
+    #contactForm input, #contactForm textarea {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
