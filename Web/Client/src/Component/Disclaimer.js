@@ -15,9 +15,6 @@ export default class Disclaimer extends React.Component {
                 <div className="disclaimerLeft">
                     DISCLAIMER: Images and texts used on this fansite are property of Relic Entertainment. We do not own anything.
                 </div>
-                <div className="disclaimerRight">
-                    Copyright &copy; 2020 coh2stats.online, created by vladcatvorstva, fefe
-                </div>
             </div>
         )
     }
