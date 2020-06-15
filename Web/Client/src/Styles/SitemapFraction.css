@@ -9,3 +9,11 @@ img.sitemapIcon {
     padding-left: 18px;
     padding-right: 5px;
 }
+
+ul.sitemapList {
+    list-style-type: square;
+}
+
+    ul.sitemapList a {
+        text-decoration: none;
+    }
