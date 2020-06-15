@@ -27,3 +27,7 @@ div.contactFormWrapper {
         color: white;
         border: 1px groove grey;
     }
+
+.contactFormButton {
+    background: url('/Images/Fundamentals/ContactFormSendButton.png') no-repeat;
+}
