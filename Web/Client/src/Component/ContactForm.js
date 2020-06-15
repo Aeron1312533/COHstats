@@ -14,18 +14,16 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="contactFormWrapper">
+                <h2>Contact Us</h2>
                 <form id="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                        <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
-                        <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                        <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} placeholder="Email"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                        <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
                     </div>
                     <button type="submit" className="contactFormButton">Submit</button>
                 </form>
