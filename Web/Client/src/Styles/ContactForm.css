@@ -5,6 +5,8 @@ div.contactFormWrapper {
     width: 400px;
 }
 
-div.contactFormWrapper h3 {
-    color: white;
-}
+    div.contactFormWrapper h3 {
+        color: white;
+        width: 350px;
+        margin-left: 20px;
+    }
