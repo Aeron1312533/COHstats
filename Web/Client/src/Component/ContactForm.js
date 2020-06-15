@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styles/ContactForm.css';
 
 export default class App extends React.Component {
     constructor(props) {
