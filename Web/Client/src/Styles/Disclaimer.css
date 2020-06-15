@@ -1,0 +1,14 @@
+div.disclaimer {
+    width: 100%;
+    background: black;
+    color: white;
+    clear: both;
+}
+
+div.disclaimerLeft {
+    float: left;
+}
+
+div.disclaimerRight {
+    float: right;
+}
