@@ -11,7 +11,14 @@ export default class SitemapFraction extends React.Component {
         return (
             <div className="sitemapFraction">
                 <img src={imgSrc} className="sitemapIcon" alt={this.props.fractionSitemap} />
-                {this.props.fractionSitemap}
+                <span>{this.props.fractionSitemap}</span>
+                <ul className="sitemapList">
+                    <li>Home</li>
+                    <li>Commanders</li>
+                    <li>Units</li>
+                    <li>Buildings</li>
+                    <li>Abilities</li>
+                </ul>
             </div>
         );
     }
