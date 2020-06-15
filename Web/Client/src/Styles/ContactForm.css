@@ -1,6 +1,7 @@
 div.contactFormWrapper {
     float: right;
-    background: black;
+    background-image: url(/Images/Fundamentals/ContactFormBackground.png);
+    background-repeat: no-repeat;
     margin-right: 20px;
     width: 400px;
 }
