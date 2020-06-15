@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import '../Styles/Footer.css';
+import Sitemap from './Sitemap';
 
 export default class Footer extends React.Component {
     constructor(props) {
@@ -14,6 +15,7 @@ export default class Footer extends React.Component {
         return (
             <div className="footer">
                 Copyright © 2020 coh2stats.online
+                <Sitemap {...this.props} />
                 <ContactForm {...this.props} />
             </div>
         )
