@@ -2,3 +2,7 @@ div.contactFormWrapper {
     float: right;
     background: black;
 }
+
+div.contactFormWrapper h3 {
+    color: white;
+}

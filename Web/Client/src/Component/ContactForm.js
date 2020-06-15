@@ -14,7 +14,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="contactFormWrapper">
-                <h2>Contact Us</h2>
+                <h3>Contact Us</h3>
                 <form id="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <div className="form-group">
                         <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name" />
