@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../Styles/SitemapFraction.css';
 
 export default class SitemapFraction extends React.Component {
@@ -8,16 +9,17 @@ export default class SitemapFraction extends React.Component {
 
     render() {
         let imgSrc = "/Images/Fractions/" + this.props.fractionShortcut + ".png";
+        let href = "/" + this.props.fractionShortcut;
         return (
             <div className="sitemapFraction">
                 <img src={imgSrc} className="sitemapIcon" alt={this.props.fractionSitemap} />
                 <span>{this.props.fractionSitemap}</span>
                 <ul className="sitemapList">
-                    <li>Home</li>
-                    <li>Commanders</li>
-                    <li>Units</li>
-                    <li>Buildings</li>
-                    <li>Abilities</li>
+                    <li><Link to={href + "/Home"} >Home</Link></li>
+                    <li><Link to={href} >Commanders</Link></li>
+                    <li><Link to={href} >Units</Link></li>
+                    <li><Link to={href} >Buildings</Link></li>
+                    <li><Link to={href} >Abilities</Link></li>
                 </ul>
             </div>
         );
