@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Component/Header';
 import Body from './Component/Body';
-import Body from './Component/Footer';
+import Footer from './Component/Footer';
 import './Styles/Main.css';
 
 export default class Main extends React.Component {
