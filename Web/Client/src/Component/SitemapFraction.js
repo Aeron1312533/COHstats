@@ -9,7 +9,7 @@ export default class SitemapFraction extends React.Component {
     render() {
         return (
             <div className="sitemapFraction">
-                {this.props.fractionName}
+                {this.props.fractionSitemap}
             </div>
         );
     }
