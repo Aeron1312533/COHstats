@@ -23,7 +23,7 @@ export default class App extends React.Component {
                         <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} placeholder="Email"/>
                     </div>
                     <div className="form-group">
-                        <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
+                        <textarea className="form-control" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
                     </div>
                     <button type="submit" className="contactFormButton"></button>
                 </form>
