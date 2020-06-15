@@ -1,5 +1,6 @@
 div.footer {
     background: url("/Images/Fundamentals/header.jpg");
+    background-position: center bottom;
     position: relative;
     padding-top: 20px;
     padding-bottom: 10px;
