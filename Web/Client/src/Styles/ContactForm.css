@@ -1,6 +1,7 @@
 div.contactFormWrapper {
     float: right;
     background: black;
+    margin-right: 20px;
 }
 
 div.contactFormWrapper h3 {
