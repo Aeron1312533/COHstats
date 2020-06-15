@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                toto je footer
+                Copyright © 2020 coh2stats.online
             </div>
         )
     }
