@@ -18,3 +18,7 @@ ul.sitemapList {
         text-decoration: none;
         color: white;
     }
+div.sitemapFraction hr {
+    border: none;
+    height: 1px;
+}
