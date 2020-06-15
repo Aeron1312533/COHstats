@@ -15,8 +15,8 @@ export default class Footer extends React.Component {
         return (
             <div className="footer">
                 Copyright © 2020 coh2stats.online
-                <Sitemap {...this.props} />
                 <ContactForm {...this.props} />
+                <Sitemap {...this.props} />
             </div>
         )
     }
