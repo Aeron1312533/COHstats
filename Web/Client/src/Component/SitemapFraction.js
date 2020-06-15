@@ -14,6 +14,7 @@ export default class SitemapFraction extends React.Component {
             <div className="sitemapFraction">
                 <img src={imgSrc} className="sitemapIcon" alt={this.props.fractionSitemap} />
                 <span>{this.props.fractionSitemap}</span>
+                <hr/>
                 <ul className="sitemapList">
                     <li><Link to={href + "/Home"} >Home</Link></li>
                     <li><Link to={href + "/Commanders"} >Commanders</Link></li>
