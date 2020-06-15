@@ -13,7 +13,7 @@ export default class Disclaimer extends React.Component {
         return (
             <div className="disclaimer">
                 <div className="disclaimerLeft">
-                    Copyright © 2020 coh2stats.online
+                    Copyright &copy; 2020 coh2stats.online
                 </div>
                 <div className="disclaimerRight">
                     Created by vladcatvorstva, fefe
