@@ -25,7 +25,7 @@ export default class App extends React.Component {
                     <div className="form-group">
                         <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
                     </div>
-                    <button type="submit" className="contactFormButton">Submit</button>
+                    <button type="submit" className="contactFormButton"></button>
                 </form>
             </div>
         );

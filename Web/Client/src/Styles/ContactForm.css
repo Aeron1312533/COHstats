@@ -30,4 +30,6 @@ div.contactFormWrapper {
 
 .contactFormButton {
     background: url('/Images/Fundamentals/ContactFormSendButton.png') no-repeat;
+    width: 76px;
+    height: 32px;
 }
