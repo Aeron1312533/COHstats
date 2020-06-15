@@ -16,10 +16,10 @@ export default class SitemapFraction extends React.Component {
                 <span>{this.props.fractionSitemap}</span>
                 <ul className="sitemapList">
                     <li><Link to={href + "/Home"} >Home</Link></li>
-                    <li><Link to={href} >Commanders</Link></li>
-                    <li><Link to={href} >Units</Link></li>
-                    <li><Link to={href} >Buildings</Link></li>
-                    <li><Link to={href} >Abilities</Link></li>
+                    <li><Link to={href + "/Commanders"} >Commanders</Link></li>
+                    <li><Link to={href + "/Units"} >Units</Link></li>
+                    <li><Link to={href + "/Buildings"} >Buildings</Link></li>
+                    <li><Link to={href + "/Abilities"} >Abilities</Link></li>
                 </ul>
             </div>
         );
