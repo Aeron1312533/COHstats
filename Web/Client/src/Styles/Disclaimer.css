@@ -1,14 +1,16 @@
 div.disclaimer {
     width: 100%;
     background: black;
-    color: white;
+    color: rgb(105,105,105);
     clear: both;
 }
 
 div.disclaimerLeft {
     float: left;
+    padding-left: 20px;
 }
 
 div.disclaimerRight {
     float: right;
+    padding-right: 20px;
 }
