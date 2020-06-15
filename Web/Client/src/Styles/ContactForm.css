@@ -7,6 +7,9 @@ div.contactFormWrapper {
 
     div.contactFormWrapper h3 {
         color: white;
-        width: 350px;
-        margin-left: 20px;
     }
+
+#contactForm {
+    width: 350px;
+    margin-left: 20px;
+}
