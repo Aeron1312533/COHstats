@@ -25,11 +25,16 @@ class CommandersController extends AbstractController
             );
         }
 
+        $abilities = [];
         foreach ($commander[0]->abilities as $ability) {
-            var_dump ($ability->name);
+            $abilities[] = {
+                'name' => $ability->name,
+                'icon' => $ability->icon,
+                'description' => $ability->description,
+			}
         };
         $resultArray = array(
-                "abilities" =>$commander[0]->abilities,
+                "abilities" => $abilities,
                 "commanderKey" => $commander[0]->commanderKey,
                 "description" => $commander[0]->description,
                 "icon" => $commander[0]->icon,
