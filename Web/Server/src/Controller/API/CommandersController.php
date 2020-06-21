@@ -24,7 +24,7 @@ class CommandersController extends AbstractController
                 'No product found for id '.$id
             );
         }
-
+                var_dump($commander[0]->abilities);
         $resultArray = array(
                 "abilities" =>$commander[0]->abilities,
                 "commanderKey" => $commander[0]->commanderKey,
@@ -57,7 +57,6 @@ class CommandersController extends AbstractController
 
         $resultArray = [];
         foreach ($commanders as $commander) {
-        var_dump($commander->abilities);
             $resultArray[] = array(
                 "abilities" =>$commander->abilities,
                 "commanderKey" => $commander->commanderKey,
