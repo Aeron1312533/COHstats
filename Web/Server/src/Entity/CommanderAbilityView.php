@@ -6,16 +6,21 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\CommanderViewRepository")
- * @ORM\Table(name="view_fact_commander")
+ * @ORM\Entity(repositoryClass="App\Repository\CommanderAbilityViewRepository")
+ * @ORM\Table(name="view_fact_commander_ability")
  */
-class CommanderView
+class CommanderAbilityView
 {
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      */
-    private $commanderKey;
+    private $commanderAbilityKey;
+
+    /**
+     * @ORM\Column(type="string", length=400)
+     */
+    private commanderAbilityCode;
 
     /**
      * @ORM\Column(type="string", length=4000)
@@ -26,31 +31,18 @@ class CommanderView
      */
     private $icon;
     /**
-     * @ORM\Column(type="string", length=300)
-     */
-    private $iconSecondary;
-        /**
      * @ORM\Column(type="string", length=4000)
      */
     private $name;
-    /**
-     * @ORM\Column(type="string", length=17)
-     */
-    private $race;
-        /**
-     * @ORM\Column(type="string", length=20)
-     */
-    private $isInDefaultBundle;
 
     /**
-     * Many Commanders have Many Abilities.
-     * @ManyToMany(targetEntity="CommanderAbilityView", inversedBy="commanders")
-     * @JoinTable(name="view_mapping_commander_commander_ability")
+     * Many Abilities have Many Commanders.
+     * @ManyToMany(targetEntity="CommanderView", mappedBy="abilities")
      */
-    private $abilities;
+    private $commanders;
 
     public function __construct() {
-        $this->abilities = new ArrayCollection();
+        $this->commanders = new ArrayCollection();
     }
 
     final function __set($name, $value) {
