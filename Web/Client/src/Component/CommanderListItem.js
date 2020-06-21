@@ -15,7 +15,7 @@ export default class CommanderListItem extends React.Component {
         let name = commanderInfo.name;
         let commanderClass = "";
 
-        if (this.props.isActive) {
+        if (commanderInfo.commanderKey == this.props.match.params.id) {
             commanderClass = "commanderListItem commanderListItem-active";
         } else {
             commanderClass = "commanderListItem";
@@ -27,7 +27,7 @@ export default class CommanderListItem extends React.Component {
                 <div className={commanderClass}>
                     <div className="commanderName">{name}</div>
                     <img className="commanderIcon" src={source} alt={name} />
-                    <CommanderAbilities {...this.props} abilities={commanderInfo.abilities} />
+                    <CommanderAbilities {...this.props} abilities={commanderInfo} />
                 </div>
             </Link>
         )
