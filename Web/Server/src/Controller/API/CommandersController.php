@@ -54,12 +54,11 @@ class CommandersController extends AbstractController
                 'No commanders found'
             );
         }
-        var_dump($commanders);
 
         $resultArray = [];
         foreach ($commanders as $commander) {
             $resultArray[] = array(
-                "abilities" =>$commander->abilities,
+                "abilities" =>$commander->abilities->name,
                 "commanderKey" => $commander->commanderKey,
                 "description" => $commander->description,
                 "icon" => $commander->icon,
