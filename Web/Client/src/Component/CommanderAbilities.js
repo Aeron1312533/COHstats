@@ -8,7 +8,6 @@ export default class CommandersAbilities extends React.Component {
     }
 
     list = () => {
-
         return this.props.abilities.map(element => {
             return (
                 <CommanderAbility ability={element} key={element.commanderAbilityKey} points="3" />
