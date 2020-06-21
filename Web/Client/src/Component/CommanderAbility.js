@@ -14,7 +14,7 @@ export default class CommanderAbility extends React.Component {
         return (
             <li className="commanderAbility">
                 <a><img src={source} alt="text" /></a>
-                <div className="abilityPoints">{this.state.points}</div>
+                <div className="abilityPoints">{this.props.points}</div>
             </li>
         )
     }
