@@ -37,7 +37,7 @@ class CommanderAbilityView
 
     /**
      * Many Abilities have Many Commanders.
-     * @ManyToMany(targetEntity="CommanderView", mappedBy="abilities")
+     * @ORM\ManyToMany(targetEntity="CommanderView", mappedBy="abilities")
      */
     private $commanders;
 

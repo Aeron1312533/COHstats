@@ -44,8 +44,8 @@ class CommanderView
 
     /**
      * Many Commanders have Many Abilities.
-     * @ManyToMany(targetEntity="CommanderAbilityView", inversedBy="commanders")
-     * @JoinTable(name="view_mapping_commander_commander_ability")
+     * @ORM\ManyToMany(targetEntity="CommanderAbilityView", inversedBy="commanders")
+     * @ORM\JoinTable(name="view_mapping_commander_commander_ability")
      */
     private $abilities;
 
