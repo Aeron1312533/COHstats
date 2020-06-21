@@ -20,7 +20,7 @@ class CommanderAbilityView
     /**
      * @ORM\Column(type="string", length=400)
      */
-    private commanderAbilityCode;
+    private $commanderAbilityCode;
 
     /**
      * @ORM\Column(type="string", length=4000)
