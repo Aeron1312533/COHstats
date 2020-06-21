@@ -66,4 +66,17 @@ class CommanderAbilityView
 	    }
   }
 
+      /**
+     * @param CommanderView $commander
+     */
+    public function addCommander(CommanderView $commander)
+    {
+        if ($this->commanders->contains($commander)) {
+            return;
+        }
+
+        $this->commanders->add($commander);
+        $commander->addAbility($this);
+    }
+
 }

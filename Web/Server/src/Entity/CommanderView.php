@@ -74,4 +74,17 @@ class CommanderView
 	    }
   }
 
+      /**
+     * @param CommanderAbilityView $ability
+     */
+    public function addUserGroup(CommanderAbilityView $ability)
+    {
+        if ($this->abilities->contains($ability)) {
+            return;
+        }
+
+        $this->abilities->add($ability);
+        $ability->addCommander($this);
+    }
+
 }
