@@ -5,15 +5,12 @@ import '../Styles/CommanderAbilities.css';
 export default class CommandersAbilities extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            abilities: props.abilities
-        };
     }
 
     list = () => {
-        return this.state.abilities.map(element => {
+        return this.props.abilities.map(element => {
             return (
-                <CommanderAbility ability={element} text="random" key={element} points="3" />
+                <CommanderAbility ability={element} key={element.commanderAbilityCode} points="3" />
             );
         });
     };
