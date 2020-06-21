@@ -27,7 +27,7 @@ export default class CommanderListItem extends React.Component {
                 <div className={commanderClass}>
                     <div className="commanderName">{name}</div>
                     <img className="commanderIcon" src={source} alt={name} />
-                    <CommanderAbilities {...this.props} abilities={[1, 2, 3, 4, 5]} />
+                    <CommanderAbilities {...this.props} abilities={commanderInfo.abilities} />
                 </div>
             </Link>
         )

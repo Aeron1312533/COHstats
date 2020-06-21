@@ -4,14 +4,10 @@ import '../Styles/CommanderAbility.css';
 export default class CommanderAbility extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            type: props.type,
-            points: props.points
-        };
     }
 
     render() {
-        let source = "/Images/Commanders/Abilities/" + this.state.type + ".png";
+        let source = "/Images/Commanders/Abilities/" + this.props.ability.icon + ".png";
         //let href = "/" + this.state.type;
         //let imgClass = (this.state.isActive == true) ? "active" : "";
 
