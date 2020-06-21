@@ -46,9 +46,18 @@ export default class CommandersList extends React.Component {
     }
 
     list = () => {
+        var isActiveSet = false;
         return this.state.commanders.map(element => {
+            var isElementActive = false;
+            if (!isActiveSet && typeof this.props.match.params.id == 'undefined') {
+                isActiveSet = true;
+                isElementActive = true;
+            } else if (!isActiveSet && typeof this.props.match.params.id != 'undefined'){
+                isActiveSet = true;
+                isElementActive = true;
+            }
             return (
-                <CommanderListItem {...this.props} commanderInfo={element} key={element.commanderKey} />
+                <CommanderListItem {...this.props} isActive={isElementActive} commanderInfo={element} key={element.commanderKey} />
             );
         });
     };
